@@ -38,9 +38,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
-
+{{-- 
     @livewireStyles
-    @livewireScripts
+    @livewireScripts --}}
 
     <style>
         
@@ -78,15 +78,15 @@
                 <h1 class="mt-4 caveat">Ndako - Property Management Made Easy</h1>
                 <p class="mt-3 fs-5">We're building something exciting! Ndako is a powerful platform designed to simplify property management. Whether you're managing a single property or an entire portfolio, we’ve got you covered. Stay tuned for our upcoming launch, and be the first to experience the future of property management!</p>
                 <p class="mt-1 fs-5">Be the first to know when we launch. Sign up below with your email to get exclusive updates and early access!</p>
-                <livewire:early-bird />
+                {{-- <livewire:early-bird /> --}}
                 <!-- Session Status -->
-                {{-- <x-auth-session-status class="mb-4" :status="session('status')" />
+                <x-auth-session-status class="mb-4" :status="session('status')" />
                 <form class="mt-1 d-lg-flex gap-2" method="post" action="{{ route('early') }}">
                     @csrf
                     <input type="text" name="name" class="form-control k-input mb-lg-0 mb-2" placeholder="Enter your name" required>
                     <input type="email" name="email" class="form-control k-input mb-lg-0 mb-2" placeholder="Enter your email" required>
                     <button class="btn k-primary p-2 fw-bold ml-2" type="submit">Sign Up for Updates</button>
-                </form> --}}
+                </form>
                 
 
             </div>
