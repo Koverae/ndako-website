@@ -37,7 +37,7 @@
             <!-- Session Status -->
             <x-auth-session-status class="mb-4" :status="session('status')" />
             <form method="POST" action="{{ route('login') }}" class="k_login_form">
-                {{-- @csrf --}}
+                @csrf
 
                 <div class="mb-2 field-login">
                     <label for="email" class="fom-label">

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DocController;
+use App\Http\Controllers\EarlyAdopterController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OAuth\AuthorizationController;
 use App\Http\Controllers\ProfileController;
@@ -29,8 +30,9 @@ Route::get('/kokoma', [HomeController::class, 'typo']);
 // Blog
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
 Route::get('/blog/ota-vs-hoel', [HomeController::class, 'blogSingle'])->name('blog.show');
-// Route::get('/jobs', [JobController::class, 'index'])->name('jobs.index');
 
+// Early Birds
+Route::post('save-early', [EarlyAdopterController::class, 'store'])->name('early');
 
 #Passport
 // http://your-laravel-app.com/oauth/authorize?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=view-profile+edit-profile"

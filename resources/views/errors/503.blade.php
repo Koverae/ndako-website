@@ -25,32 +25,9 @@
     <!-- Open Graph -->
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJ1L2Y7QS6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-HJ1L2Y7QS6');
-    </script>
     <!-- Google tag End (gtag.js) -->
 
     <!-- Meta Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '291287213552434');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=291287213552434&ev=PageView&noscript=1" />
-    </noscript>
     <!-- End Meta Pixel Code -->
 
     <!-- Caveat Font -->
@@ -61,6 +38,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
+
+    @livewireStyles
+    @livewireScripts
 
     <style>
         
@@ -84,6 +64,9 @@
             min-height: 20px;
             outline: #026469;
         }
+        .k-input:focus{
+            outline: none;
+        }
     </style>
 </head>
 <body class="overflow-x-hidden">
@@ -95,18 +78,16 @@
                 <h1 class="mt-4 caveat">Ndako - Property Management Made Easy</h1>
                 <p class="mt-3 fs-5">We're building something exciting! Ndako is a powerful platform designed to simplify property management. Whether you're managing a single property or an entire portfolio, we’ve got you covered. Stay tuned for our upcoming launch, and be the first to experience the future of property management!</p>
                 <p class="mt-1 fs-5">Be the first to know when we launch. Sign up below with your email to get exclusive updates and early access!</p>
+                <livewire:early-bird />
+                <!-- Session Status -->
+                {{-- <x-auth-session-status class="mb-4" :status="session('status')" />
+                <form class="mt-1 d-lg-flex gap-2" method="post" action="{{ route('early') }}">
+                    @csrf
+                    <input type="text" name="name" class="form-control k-input mb-lg-0 mb-2" placeholder="Enter your name" required>
+                    <input type="email" name="email" class="form-control k-input mb-lg-0 mb-2" placeholder="Enter your email" required>
+                    <button class="btn k-primary p-2 fw-bold ml-2" type="submit">Sign Up for Updates</button>
+                </form> --}}
                 
-                <form class="mt-1 d-lg-flex gap-2">
-                    <input type="text" class="form-control k-input mb-lg-0 mb-2">
-                    <a href="https://www.ndako.koverae.com?medium=dotcom" class="btn k-primary p-2 fw-bold ml-2">Sign Up for Updates</a>
-                </form>
-
-                <!-- <div class="mt-2">
-                    <h4>Thank you for signing up! 🎉</h4>
-                    <p class="mt-2 fs-5">
-                        You’re one step closer to revolutionizing your property management experience. Stay tuned for updates! 🚀
-                    </p>
-                </div> -->
 
             </div>
             <div class="col-lg-6 col-md-12">
@@ -114,5 +95,23 @@
             </div>
         </div>
     </main>
+
+
+    <script src="{{ asset('assets/js/jquery-3.5.1.min.js')}}"></script>
+    <script src="{{ asset('assets/js/jquery-migrate-3.0.0.min.js')}}"></script>
+    <script src="{{ asset('assets/js/popper.min.js')}}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js')}}"></script>
+    <script src="{{ asset('assets/js/bootstrap.bundle.js')}}"></script>
+    <script src="{{ asset('assets/js/owl.carousel.min.js')}}"></script>
+    <script src="{{ asset('assets/js/aos.js')}}"></script>
+    <script src="{{ asset('assets/js/imagesloaded.pkgd.js')}}"></script>
+    <script src="{{ asset('assets/js/isotope.pkgd.min.js')}}"></script>
+    <script src="{{ asset('assets/js/jquery.animateNumber.min.js')}}"></script>
+    <script src="{{ asset('assets/js/jquery.stellar.min.js')}}"></script>
+    <script src="{{ asset('assets/js/jquery.waypoints.min.js')}}"></script>
+    <script src="{{ asset('assets/js/jquery.fancybox.min.js')}}"></script>
+    <script src="{{ asset('assets/js/custom.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>

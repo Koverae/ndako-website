@@ -23,6 +23,7 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         // IP Info Package
         \ipinfo\ipinfolaravel\ipinfolaravel::class,
+        \App\Http\Middleware\AllowDuringMaintenance::class,
     ];
 
     /**
