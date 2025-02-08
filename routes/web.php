@@ -41,4 +41,17 @@ Route::post('save-early', [EarlyAdopterController::class, 'store'])->name('early
 // Route::post('/oauth/deny', [AuthorizationController::class, 'deny'])->name('deny');
 // Route::post('/oauth/token', [AuthorizationController::class, 'issueToken']);
 
+// Route::middleware('auth')->prefix('my-kover')->group(function () {
+//     Route::get('/shop/cart', [CartController::class, 'index'])->name('cart');
+//     Route::post('/shop/cart/add', [CartController::class, 'addToCart'])->name('cart.add');
+// });
+
+// Route::middleware(['auth', 'cart'])->group(function () {
+//     Route::get('/shop/cart/delete', [CartController::class, 'deleteCart'])->name('cart.destroy');
+//     Route::get('/shop/checkout', [CartController::class, 'ship'])->name('cart.ship');
+//     Route::post('/shop/checkout', [CartController::class, 'shipping'])->name('cart.shipping');
+//     Route::get('/shop/checkout/payment', [CartController::class, 'payment'])->name('cart.pay');
+//     Route::post('/shop/checkout/payment/stripe', [CartController::class, 'charge'])->name('cart.pay.stripe');
+// });
+
 require __DIR__.'/auth.php';

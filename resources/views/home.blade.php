@@ -21,346 +21,155 @@
 <!-- Hero -->
 <div class="pb-6 hero-ban overlay" id="hero" >
     <div class="container">
-        <div class="h-auto pt-8 intro-group row">
+        <div class="h-auto pt-8 mb-3 intro-group row">
             <!-- Texte Gauche -->
             <div class="text-left intro col-lg-6 col-md-12 col-sm-12 align-items-start justify-content-start">
                 <h1 class="mb-4 text-black" data-aos="fade-up" data-aos-delay="100">
-                    Property Management made easy
+                    Hotel Management made easy
                 </h1>
                 <p class="mb-5 text-left text-black align-items-start" data-aos-delay="100">
-                    Dozens of businesses like yours trust <strong>Ndako</strong> for their technology. From listings to financial tracking, <strong>Ndako</strong> lets you focus on what matters most ,  your business.
+                    <strong>Ndako</strong>  is a simple and efficient cloud-based hotel management software designed for small and medium-sized hotels. Manage bookings, guests, and invoicing with ease, all in one place.
                 </p>
                 <!-- Call to action 1 -->
                 <div class="gap-2 text-left intro-buttons d-flex" data-aos-delay="100">
                     <!-- Start Now -->
-                    <a class="mr-2 btn start-now" href="{{ route('demo') }}">Start it for free</a>
+                    <a class="mr-2 btn start-now" href="{{ route('demo') }}">Start for free</a>
                     <!-- Bookig a demo -->
-                    <button class="btn btn-light">Book a demo</button>
+                    <a href="#" class="btn btn-light">Book a demo</a>
                 </div>
                 <!-- Call to action 2 -->
                 <div class="text-secondary cta-2 font-weight-bold" data-aos-delay="100">
-                    Have more than 3 employees? <a class="explore-spark" href="{{ route('home') }}#pricing">Explore our Spark plan <i class="bi bi-arrow-right"></i></a>
+                    Handling 25+ rooms? <a class="explore-spark" href="{{ route('home') }}#pricing">Explore our Spark plan <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
             <!-- Illustration -->
             <div class="intro col-lg-6 col-md-12 col-sm-12">
                 <!-- Vidéo illustrative -->
                     <video src="{{ asset('assets/videos/ndako-spot.mp4')}}" muted autoplay loop class="shadow homepage-video"></video>
-                    <!-- <img src="{{ asset('assets/images/img-h-7.png')}}" alt="" class="shadow homepage-video"> -->
             </div>
 
+        </div>
+
+        <div class="p-5 hero-card">
+            <div class="mt-10 hero-tabs justify-content-center">
+                <div class="flex pt-3 pb-3 mb-4 border-b toggle-hero">
+                  <span class="p-3 tab-button active" onclick="showTab(event, 'booking')">Direct Booking</span>
+                  <span class="p-3 tab-button" onclick="showTab(event, 'guest')">Guest Management</span>
+                  <span class="p-3 tab-button" onclick="showTab(event, 'invoicing')">Invoicing</span>
+                </div>
+              
+                <div id="booking" class="p-6 tab-content">
+                    <p class="mt-2 text-gray-600">Seamlessly manage direct reservations, reduce dependency on OTAs, and maximize revenue.</p>
+                    <img src="{{ asset('assets/images/view-1.webp') }}" alt="" class="position-relative w-100">
+                </div>
+                
+                <div id="guest" class="hidden p-6 tab-content">
+                  <p class="mt-2 text-gray-600">Keep track of guest profiles, stay history, and personalized experiences effortlessly.</p>
+                  <img src="{{ asset('assets/images/view-1.webp') }}" alt="" class="position-relative w-100">
+                </div>
+              
+                <div id="invoicing" class="hidden p-6 tab-content">
+                  <p class="mt-2 text-gray-600">Automate invoicing, process payments, and ensure a smooth billing experience.</p>
+                  <img src="{{ asset('assets/images/view-1.webp') }}" alt="" class="position-relative w-100">
+                </div>
+            </div>
         </div>
 
     </div>
 </div>
 <!-- Hero End -->
 
-<!-- App Section -->
-<div class="mt-8 site-section" id="features">
-    <div class="container app-section">
-        <div class="">
-            <h2 class="mb-5 col-12 title-center" data-aos="fade-up" data-aos-delay="500">
-                A platform designed for your business
+
+<section class="mb-5 overflow-hidden section-main">
+    <div class="container">
+        <div class="m-5 d-flex justify-content-between align-items-center">
+            <h2 class="k-card-title margin-0 caveat">
+                {{ __('Work smarter by keeping everything in one place') }}
             </h2>
+            <a class="mr-2 btn start-now" href="{{ route('demo') }}">{{ __('Get Started') }}</a>
         </div>
-
-        <div class="mb-3 row">
-    
-            <!-- Reservations and Distribution Made Easy -->
-            <div class="px-3 col col-lg-4 d-flex flex-column align-items-center apps-list">
-                <h3 class="app_list_col_title" data-aos="fade-up" data-aos-delay="500">Reservations and Distribution Made Easy</h3>
-                <div class="mt-3 d-inline-flex k_animate">
-                    <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
-                        <img src="{{ asset('assets/images/apps/reservation.png')}}" alt="" class="inline p-2 deep-1">
-                        <b class="inline text-body">Reservation System</b>
-                    </a>
-                    <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
-                        <img src="{{ asset('assets/images/apps/channel-manager.png')}}" alt="Channel Manager" class="inline p-2 deep-1">
-                        <b class="inline text-body">Channel Manager</b>
-                    </a>
-                    <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
-                        <img src="{{ asset('assets/images/apps/revenue-manager.png')}}" alt="Revenue Management" class="inline p-2 deep-1">
-                        <b class="inline text-body">Revenue Management</b>
-                    </a>
+        <div class="gap-2 d-lg-flex d-block">
+            <div class="p-5 mb-2 text-center mr-lg-2 k-card col-lg-6 col-12">
+                <div class="k-card-header">
+                    <h3 class="mb-1">{{ __('Integrations') }}</h3>
+                    <div class="mb-4 span">Connect Ndako to your other tools.</div>
+                </div>
+                <div class="mt-4">
+                    <div class="gap-3 mb-3 d-flex justify-content-center">
+                        <img src="{{ asset('assets/images/third-icons/zapier-1.jpg') }}" height="43px" alt="" class="mr-2 img">
+                        <img src="{{ asset('assets/images/third-icons/google-calendar.jpg') }}" height="43px" alt="" class="ml-2 img">
+                    </div>
+                    <div class="gap-3 mb-3 d-flex justify-content-center">
+                        <img src="{{ asset('assets/images/third-icons/zapier-1.jpg') }}" height="43px" alt="" class="mr-2 img">
+                        <img src="{{ asset('assets/images/third-icons/google-calendar.jpg') }}" height="43px" alt="" class="ml-2 img">
+                        <img src="{{ asset('assets/images/third-icons/gmail.jpg') }}" height="43px" alt="" class="ml-2 img">
+                    </div>
+                    <div class="gap-3 mb-3 d-flex justify-content-center">
+                        <img src="{{ asset('assets/images/third-icons/google-calendar.jpg') }}" height="43px" alt="" class="ml-2 img">
+                        <img src="{{ asset('assets/images/third-icons/google-calendar.jpg') }}" height="43px" alt="" class="ml-2 img">
+                    </div>
+                    <div class="gap-3 d-flex justify-content-center">
+                        <img src="{{ asset('assets/images/third-icons/zapier-1.jpg') }}" height="43px" alt="" class="ml-2 img">
+                        <img src="{{ asset('assets/images/third-icons/zapier-1.jpg') }}" height="43px" alt="" class="ml-2 img">
+                    </div>
                 </div>
             </div>
-            <!-- Reservations and Distribution Made Easy -->
-    
-            <!-- Enhancing the In-Stay Experience -->
-            <div class="px-3 col col-lg-4 d-flex flex-column align-items-center apps-list">
-                <h3 class="app_list_col_title" data-aos="fade-up" data-aos-delay="500">Enhancing the In-Stay Experience</h3>
-                <div class="mt-3 d-inline-flex k_animate">
-                    <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
-                        <img src="{{ asset('assets/images/apps/front-desk.png')}}" alt="Front-desk" class="inline p-2 deep-1">
-                        <b class="inline text-body">Front-desk</b>
-                    </a>
-                    <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
-                        <img src="{{ asset('assets/images/apps/crm.png')}}" alt="CRM" class="inline p-2 deep-1">
-                        <b class="inline text-body">CRM</b>
-                    </a>
-                    <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
-                        <img src="{{ asset('assets/images/apps/housekeeping.png')}}" alt="Housekeeping" class="inline p-2 deep-1">
-                        <b class="inline text-body">Housekeeping</b>
-                    </a>
-                    <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
-                        <img src="{{ asset('assets/images/apps/pos.png')}}" alt="Point of Sales" class="inline p-2 deep-1">
-                        <b class="inline text-body">Pos</b>
-                    </a>
+            <div class="p-5 mb-2 text-center ml-lg-2 k-card col-lg-6 col-12">
+                <div class="k-card-header">
+                    <h3 class="mb-1">{{ __('Automations') }}</h3>
+                    <div class="mb-4 span">{{ __('Save time with automated workflows.') }}</div>
+                </div>
+                <div class="mt-4">
+                    <img class="w-100" src="{{ asset('assets/images/automation.jpg') }}" alt="">
                 </div>
             </div>
-            <!-- Enhancing the In-Stay Experience -->
-    
-            <!-- Streamlined Back Office & Reporting -->
-            <div class="px-3 col col-lg-4 d-flex flex-column align-items-center apps-list">
-                <h3 class="app_list_col_title" data-aos="fade-up" data-aos-delay="500">Streamlined Back Office & Reporting</h3>
-                <div class="mt-3 d-inline-flex k_animate">
-                    <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
-                        <img src="{{ asset('assets/images/apps/analytics.png')}}" alt="Reporting and Analytics" class="inline p-2 deep-1">
-                        <b class="inline text-body">Reporting and Analytics</b>
-                    </a>
-                    <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
-                        <img src="{{ asset('assets/images/apps/back-office.png')}}" alt="Back Office" class="inline p-2 deep-1">
-                        <b class="inline text-body">Back Office</b>
-                    </a>
+        </div>
+        <div class="p-5 mt-3 mb-2 mr-0 text-start k-card col-lg-12 col-12">
+            <div class="d-flex justify-content-between">
+                <div class="pt-4 k-card-header col-lg-6 text-start">
+                    <h3 class="mb-0">{{ __('Reports') }}</h3>
+                    <div class="mt-0 mb-4 span">{{ __('Dive into key KPIs and get clarity on financials.') }}</div>
                 </div>
-            </div>
-            <!-- Streamlined Back Office & Reporting -->
-    
-        </div>
-    
-        <div class="col-12"  data-aos="fade-up" data-aos-delay="500">
-            <a href="#" class="float-right apps-bottom-button font-weight-bold" href="">
-                Learn more <i class="bi bi-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- App Section End -->
-
-<!-- Testimonial for simplicity -->
-<section class="pt-24 pb-16">
-    <div class="container">
-        <div class="flex-col p-4 bg-white shadow testimony-1 d-flex">
-            <picture class="mb-6 col-md-3 d-none d-md-inline image-testimony">
-                <img class="mr-6 rounded-circle" src="{{ asset('assets/images/people/avatar-1.png')}}" height="150px" alt="">
-            </picture>
-            <div class="col-md-9">
-                <h5 class="mb-4 text-black caveat" style="font-size: 26px;">
-                    Like a craftsman whose genius is amplified by the quality of his tools, each professional, equipped with the right solutions, transforms his talent into tangible success, shaping the future of his company with precision and passion.
-                </h5>
-                <div class="text-secondary">
-                    Aramera MAMADOU, Owner of <strong>Conso Plus</strong>
+                <div class="p-0 col-lg-8 col-12">
+                    <div class="mb-3 d-flex justify-content-between">
+                        <img class="rounded" width="335px" src="{{ asset('assets/images/graph.jpg') }}" alt="">
+                        <img class="rounded" width="335px" src="{{ asset('assets/images/activity.jpg') }}" alt="">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <img class="rounded" width="335px" src="{{ asset('assets/images/client.jpg') }}" alt="">
+                        <img class="rounded" width="335px" src="{{ asset('assets/images/activity.jpg') }}" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Testimonial for simplicity -->
 
-<!-- PMS Presentation -->
-<section class="features-lg ">
-    <div class="container">
-        <!-- Head Section -->
-        <div class="row feature align-items-center justify-content-between">
-            <div class="col-lg-5 section-stack order-lg-2 mb-lg-0 position-relative" data-aos="fade-up" data-aos-delay="0">
-                <img src="{{ asset('assets/images/illustrations/pms-presentation-1.png')}}" class="rounded" alt="">
-    
-            </div>
-            <div class="col-lg-7 section-title" data-aos="fade-up" data-aos-delay="100">
-    
-                <h2 class="mb-1 text-title font-weight-bold heading caveat" id="first-title">
-                    Mastering the Art of Performance
-                    <h5 class="mt-2 mb-3 text-title font-weight-bold heading" id="second-title">When the Right Tools Shape the Future</h5>
-                </h2>
-                <p class="mb-1 text-black">
-                    Imagine a property manager whose expertise is limited without the right tools. The synergy between experience and technology turns ordinary management into extraordinary results. In property management, each task, whether managing listings, tracking finances, or enhancing guest satisfaction, benefits from the tools at hand. With Ndako’s all-in-one platform, property managers transform operations, showing that excellence is born from the union of skill and the right tools.
-                </p>
-                <!-- Call to action 1 -->
-                <div class="gap-2 mt-3 text-left intro-buttons d-flex" data-aos-delay="100">
-                    <!-- Start Now -->
-                    <a class="mr-2 btn start-now" href="{{ route('demo') }}">Start it for free</a>
-                    <!-- Bookig a demo -->
-                    <a href="#" class="btn btn-light">Book a demo</a>
-                </div>
-                <!-- Call to action 1 -->
-    
-            </div>
-    
-        </div>
-        <!-- Head Section -->
-         
-        <!-- Bottom Section -->
-        <div class="row align-items-center justify-content-between">
-            <!-- Effortless Property Listings -->
-            <div class="col-lg-6 section-title" data-aos="fade-up" data-aos-delay="100">
-                <h5 class="mt-2 mb-3 text-title font-weight-bold heading" id="second-title">Effortless Property Listings</h5>
-                <p class="mb-1 text-black">
-                    Easily manage and update property listings with Ndako, keeping your portfolio attractive and current for tenants and guests.
-                </p>
-            </div>
-            <!-- Effortless Property Listings -->
-
-            <!-- Financial Tracking Made Easy -->
-            <div class="col-lg-6 section-title" data-aos="fade-up" data-aos-delay="100">       
-                <h5 class="mt-2 mb-3 text-title font-weight-bold heading" id="second-title">Financial Tracking Made Easy</h5>
-                <p class="mb-1 text-black">
-                    Track revenue and expenses in one place with Ndako, gaining clear insights to drive better financial decisions.
-                </p>          
-            </div>
-            <!-- Financial Tracking Made Easy -->
-    
-        </div>
-        <!-- Bottom Section -->
-    </div>
-</section>
-<!-- PMS Presentation -->
-
-<!-- Channel Manager Presentation -->
-<section class="features-lg ">
-    <div class="container">
-        <!-- Head Section -->
-        <div class="row feature align-items-center justify-content-between">
-            <div class="mb-4 col-lg-5 mb-lg-0 section-stack" data-aos="fade-up" data-aos-delay="0">
-                <img src="{{ asset('assets/images/illustrations/pms-presentation-1.png')}}" class="rounded" alt="">
-    
-            </div>
-            <div class="col-lg-7 section-title" data-aos="fade-up" data-aos-delay="100">
-    
-                <h2 class="mb-1 text-title font-weight-bold heading caveat" id="first-title">
-                    Seamless Connectivity
-                    <h5 class="mt-2 mb-3 text-title font-weight-bold heading" id="second-title">Effortlessly Expand Your Reach</h5>
-                </h2>
-                <p class="mb-1 text-black">
-                    Ndako’s Channel Manager ensures your property is visible across multiple booking platforms, effortlessly syncing availability, pricing, and reservations in real time. This streamlined connectivity allows you to expand your reach, attract more guests, and prevent double bookings all from a single, user-friendly interface. With Ndako, maximize occupancy while minimizing administrative work, letting you focus on providing an exceptional guest experience.
-                </p>
-                <!-- Call to action 1 -->
-                <div class="gap-2 mt-3 text-left intro-buttons d-flex" data-aos-delay="100">
-                    <!-- Start Now -->
-                    <a class="mr-2 btn start-now" href="{{ route('demo') }}">Start it for free</a>
-                    <!-- Bookig a demo -->
-                    <a href="#" class="btn btn-light">Book a demo</a>
-                </div>
-    
-            </div>
-    
-        </div>
-        <!-- Head Section -->
-         
-        <!-- Bottom Section -->
-        <div class="row align-items-center justify-content-between">
-            <!-- Effortless Property Listings -->
-            <div class="col-lg-6 section-title" data-aos="fade-up" data-aos-delay="100">
-                <h5 class="mt-2 mb-3 text-title font-weight-bold heading" id="second-title">Effortlessly Expand Your Reach</h5>
-                <p class="mb-1 text-black">
-                    With Ndako’s Channel Manager, connect to multiple booking platforms in real time, keeping availability and pricing updated instantly. Improve efficiency and save money instead of using direct connections or 3rd party systems.
-                </p>
-            </div>
-            <!-- Effortless Property Listings -->
-
-            <!-- Financial Tracking Made Easy -->
-            <div class="col-lg-6 section-title" data-aos="fade-up" data-aos-delay="100">       
-                <h5 class="mt-2 mb-3 text-title font-weight-bold heading" id="second-title">Centralized Booking Control</h5>
-                <p class="mb-1 text-black">
-                    Manage reservations from one platform with ease, reducing administrative tasks and maximizing occupancy. Ndako lets you focus on enhancing guest experiences while staying fully booked.
-                    Connection includes Airbnb and Booking and others.
-                </p>          
-            </div>
-            <!-- Financial Tracking Made Easy -->
-    
-        </div>
-        <!-- Bottom Section -->
-    </div>
-</section>
-<!-- Channel Manager Presentation -->
-
-<!-- Guests/Tenants Space  Presentation -->
-<section class="features-lg ">
-    <div class="container">
-        <!-- Head Section -->
-        <div class="row feature align-items-center justify-content-between">
-            <div class="shadow col-lg-5 section-stack order-lg-2 mb-lg-0 position-relative" data-aos="fade-up" data-aos-delay="0">
-                <img src="{{ asset('assets/images/illustrations/tenant-space.png')}}" class="rounded" alt="">
-    
-            </div>
-            <div class="col-lg-7 section-title" data-aos="fade-up" data-aos-delay="100">
-    
-                <h2 class="mb-1 text-title font-weight-bold heading caveat" id="first-title">
-                    A Space to Belong
-                    <h5 class="mt-2 mb-3 text-title font-weight-bold heading" id="second-title">A Seamless Experience for Everyone</h5>
-                </h2>
-                <p class="mb-1 text-black">
-                    Ndako’s Guest App provides a dedicated space where guests and tenants can easily access essential information, communicate with management, and manage their stay. From seamless check-ins to service requests and payment processing, this personalized portal enhances their experience, making interactions smooth and memorable. With Ndako, empower your guests and tenants to feel truly at home.
-                </p>
-                <!-- Call to action 1 -->
-                <div class="gap-2 mt-3 text-left intro-buttons d-flex" data-aos-delay="100">
-                    <!-- Start Now -->
-                    <a class="mr-2 btn start-now" href="{{ route('demo') }}">Start it for free</a>
-                    <!-- Bookig a demo -->
-                    <a href="#" class="btn btn-light">Book a demo</a>
-                </div>
-    
-            </div>
-    
-        </div>
-        <!-- Head Section -->
-         
-        <!-- Bottom Section -->
-        <div class="row align-items-center justify-content-between">
-            <!-- Effortless Property Listings -->
-            <div class="col-lg-6 section-title" data-aos="fade-up" data-aos-delay="100">
-                <h5 class="mt-2 mb-3 text-title font-weight-bold heading" id="second-title">A Personalized Experience</h5>
-                <p class="mb-1 text-black">
-                    Guests and tenants can easily manage their stay and communicate with property managers. Everything they need is just a tap away.
-                </p>
-            </div>
-            <!-- Effortless Property Listings -->
-
-            <!-- Financial Tracking Made Easy -->
-            <div class="col-lg-6 section-title" data-aos="fade-up" data-aos-delay="100">       
-                <h5 class="mt-2 mb-3 text-title font-weight-bold heading" id="second-title">Streamlined Service & Requests</h5>
-                <p class="mb-1 text-black">
-                    From service requests to payments, Ndako makes managing stays simple. Streamlined and hassle-free for both guests and managers.
-                </p>          
-            </div>
-            <!-- Financial Tracking Made Easy -->
-    
-        </div>
-        <!-- Bottom Section -->
-    </div>
-</section>
-<!-- Guests/Tenants Space  Presentation -->
-
-<!-- Integration Presentation -->
-<!-- Integration Presentation -->
 
 <!-- Pricing -->
  <section class="pricing-section" id="pricing">
-    <div class="container mt-5">
+    <div class="mt-5 container-fluid">
       <div class="mb-5 text-center section-title" data-aos="fade-up" data-aos-delay="0">
         <h2 class="mb-5 heading font-weight-bold caveat">Plans tailored to your business</h2>
 
-        <div class="switch-plan">
-
-          <div class="d-inline-flex align-items-center">
-            
-            <div class="period"><span class="mr-2">Yearly</span> <span class="save-percent" style="background-color: #026469;">Save 2 months Yearly</span></div>
-            <a href="#" wire:click="togglePeriod" class="period-toggle js-period-toggle"></a>
-            <div class="period"><span class="mr-2">Monthly</span></div>
-          </div>
-
+        <div class="toggle-outter d-inline-flex align-items-center">
+            <div class="p-3 "><span class="text-white font-weight-bolder">Monthly</span></div>
+            <div class="p-3 yearly active"><span class="text-white font-weight-bolder">Yearly</span><span class="bg-white save-percent" style="color: #026469;">Save 2 months Yearly</span></div>
         </div>
+        
       </div>
 
-      <div class="pl-3 overflow-x-auto row">
-        <div class="mb-2 bg-white col-lg-6" data-aos="fade-up" data-aos-delay="0">
+      <div class="mb-3 overflow-x-auto row">
+
+        <div class="mb-2 bg-white border rounded col-lg-4" data-aos="fade-up" data-aos-delay="0">
           <div class="pricing-item ">
-            <h3>Standard</h3>
+            <h3>Ndako Starter</h3>
             <div class="mb-4 period-change d-block">
               <div class="price-wrap">
                 <div class="price">
                   <div>
-                    <div>KSh 0 (Free)</div>
-                    <div>KSh 0 (Free)</div>
+                    <div>KSh 5,600<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 7500</sup></div>
+                    <div>KSh 7,150<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 9,500</sup></div>
                   </div>
                 </div>
               </div>
@@ -368,40 +177,49 @@
                 <div class="mr-1 d-inline-block">Per</div>
                 <div class="text-left d-block period">
                   <div>
-                    <div><b>employee / month</b></div>
-                    <div><b>employee / month</b></div>
+                    <div><b>month (billed annually)</b></div>
+                    <div><b>month <span class="text-white">(billed monthly)</span></b></div>
                   </div>
                 </div>
               </div>
             </div>
-             
-            <!-- Features -->
-            <ul class="list-unstyled" style="height: 285px;">
-                <li class="d-flex"><span class="mt-1 mr-2 feather-check-square"></span><span><strong>All apps</strong></span></li>
-                <hr>
-                <li class="d-flex"><span class="mt-1 mr-2 feather-check-square"></span><span>For <strong>3</strong> employees</span></li>
-                <hr>
-                <li class="d-flex"><span class="mt-1 mr-2 feather-check-square"></span><span>Ndako Cloud <i class="bi bi-cloud"></i></span></li>
-            </ul>
-            <!-- Features -->
+            
+            <!-- Room Range -->
+            <p class="mb-4 text-center text-gray-600">
+                For <strong>1-10 rooms</strong> | Ideal for small hotels, boutique stays, and guesthouses.
+            </p>
+
             <!-- Call To Action -->
             <div class="mb-4 ">
-                <a href="{{ route('demo') }}" class="btn start-now col-12 font-weight-bold text-uppercase">Start Now</a>
-              </div>
-              <!-- Call To Action -->
+                <a href="{{ route('demo') }}" class="btn start-now col-12 font-weight-bold text-uppercase">{{ __('Buy Now') }}</a>
+            </div>
+            <div class="mb-4">
+                <a href="{{ route('demo') }}" class="btn btn-light col-12 font-weight-bold">Start for free</a>
+            </div>
+            <!-- Call To Action -->
+
+            <!-- Features -->
+            <ul class="list-unstyled" style="height: 285px;">
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Direct Booking Management</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Guest Management</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Basic Invoicing</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Reporting & Insights</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Basic Support</span></li>
+            </ul>
+            <!-- Features -->
 
           </div>
         </div>
 
-        <div class="mb-2 shadow col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="pricing-item">
-            <h3>Spark</h3>
+        <div class="mb-2 bg-white shadow col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="pricing-item ">
+            <h3 class="mb-3">Ndako <span class="caveat">Spark</span></h3>
             <div class="mb-4 period-change d-block">
               <div class="price-wrap">
                 <div class="price">
                   <div>
-                      <div>KSh 950.00<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 1,200</sup></div>
-                      <div>KSh 1,200<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 1,700</sup></div>
+                    <div>KSh 9,400<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 12500</sup></div>
+                    <div>KSh 11,250<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 15000</sup></div>
                   </div>
                 </div>
               </div>
@@ -409,107 +227,103 @@
                 <div class="mr-1 d-inline-block">Per</div>
                 <div class="text-left d-block period">
                   <div>
-                    <div><b>employee / month</b></div>
-                    <div><b>employee / month</b></div>
+                    <div><b>month</b></div>
+                    <div><b>month</b></div>
                   </div>
                 </div>
               </div>
             </div>
+            
+            <!-- Room Range -->
+            <p class="mb-4 text-center text-gray-600">
+                For <strong>11-45 rooms</strong> | For mid-sized hotels streamlining operations.
+            </p>
+            
+            <!-- Call To Action -->
+            <div class="mb-4 ">
+                <a href="{{ route('demo') }}" class="btn start-now col-12 font-weight-bold text-uppercase">{{ __('Buy Now') }}</a>
+            </div>
+            <div class="mb-4">
+                <a href="{{ route('demo') }}" class="btn btn-light col-12 font-weight-bold">Start for free</a>
+            </div>
+            <!-- Call To Action -->
 
             <!-- Features -->
             <ul class="list-unstyled" style="height: 285px;">
-                <li class="d-flex"><span class="mt-1 mr-2 feather-check-square"></span><span><strong>All apps</strong></span></li>
-                <hr>
-                <li class="d-flex"><span class="mt-1 mr-2 feather-check-square"></span><span>Ndako Cloud <i class="bi bi-cloud"></i></span></li>
-                <hr>
-                <li class="d-flex"><span class="mt-1 mr-2 feather-check-square"></span><span><b>Unlimited</b> employees</span></li>
-                <hr>
-                <li class="d-flex"><span class="mt-1 mr-2 feather-check-square"></span><span>Multi Property Management</span></li>
-                <hr>
-                <li class="d-flex"><span class="mt-1 mr-2 feather-check-square"></span><span>Multi-Company</span></li>
-                <hr>
-                <li class="d-flex"><span class="mt-1 mr-2 feather-check-square"></span><span>1 Personalized Website (Optional)</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Everything in Starter Plan, plus:</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Advanced Direct Booking Management</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Advanced Guest Management</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Customizable Invoicing</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Advanced Reporting & Insights</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Revenue Management (Basic)</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Website Booking Integration</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Payment Processing (M-Pesa, Stripe, PayPal)</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Priority Support</span></li>
             </ul>
             <!-- Features -->
-
-            <!-- Call To Action -->
-            <div class="mb-4">
-                <button type="submit" class="btn start-now col-12 font-weight-bold text-uppercase">Buy Now</button>
-            </div>
-            <div class="mb-3">
-                <a href="{{ route('demo') }}" class="btn btn-secondary col-12 font-weight-bold">Start a free trial</a>
-            </div>
-            <!-- Call To Action -->
 
           </div>
         </div>
 
-      </div>
-      <!-- Apps -->
-      <div class="pt-5 pb-3 text-center text-black col-12">
-        <p><strong>Spark</strong> plan includes all applications for a single fee:</p>
-      </div>
-      <div class="text-center row justify-content-center">
-        <!-- POS -->
-        <div class="mb-3 text-black col-4 col-md-3 col-lg-2 col-xl">
-            <img src="{{ asset('assets/images/apps/reservation.png')}}" height="70px" alt="Point de vente" class="rounded-1">
-            <div class="mt-2 nowrap font-weight-bold">
-                Reservation
+        <div class="mb-2 border rounded col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="pricing-item">
+            <h3>Ndako Enterprise</h3>
+            <div class="mb-4 period-change d-block">
+              <div class="price-wrap">
+                <div class="price">
+                  <div>
+                      <div>KSh 750.00<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 950</sup></div>
+                      <div>KSh 950<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 1,250</sup></div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center d-inline-flex align-items-center period-wrap">
+                <div class="mr-1 d-inline-block">Per</div>
+                <div class="text-left d-block period">
+                  <div>
+                    <div><b>room / month</b></div>
+                    <div><b>room / month</b></div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-        <!-- POS -->
-        <div class="mb-3 text-black col-4 col-md-3 col-lg-2 col-xl">
-            <img src="{{ asset('assets/images/apps/pos.png')}}" height="70px" alt="Point de vente" class="rounded-1">
-            <div class="mt-2 nowrap font-weight-bold">
-                PDV
+            
+            <!-- Room Range -->
+            <p class="mb-4 text-center text-gray-600">
+                For <strong>46-150 rooms</strong> | Larger properties and hotel chains requiring advanced features.
+            </p>
+            
+            <!-- Call To Action -->
+            <div class="mb-4 ">
+                <a href="{{ route('demo') }}" class="btn start-now col-12 font-weight-bold text-uppercase">{{ __('Buy Now') }}</a>
             </div>
-        </div>
-        <!-- POS -->
-        <div class="mb-3 text-black col-4 col-md-3 col-lg-2 col-xl">
-            <img src="{{ asset('assets/images/apps/crm.png')}}" height="70px" alt="Point de vente" class="rounded-1">
-            <div class="mt-2 nowrap font-weight-bold">
-                CRM
+            <div class="mb-4">
+                <a href="{{ route('demo') }}" class="btn btn-light col-12 font-weight-bold">Start for free</a>
             </div>
+            <!-- Call To Action -->
+
+            <!-- Features -->
+            <ul class="list-unstyled" style="height: 285px;">
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Everything in Spark Plan, plus:</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Multi-Property Management</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Advanced Revenue Management</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Full API Access</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Custom User Roles & Permissions</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Bulk Import/Export</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>OTA Connector</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Seamless Website Booking Integration</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>Full Guest Portal</span></li>
+                <li class="d-flex"><span style="color: green;" class="mt-1 mr-2 feather-check-square"></span><span>24/7 Priority Support</span></li>
+            </ul>
+            <!-- Features -->
+
+          </div>
         </div>
-        <!-- Channel Manager -->
-        <div class="mb-3 text-black col-4 col-md-3 col-lg-2 col-xl">
-            <img src="{{ asset('assets/images/apps/channel-manager.png')}}" height="70px" alt="Point de vente" class="rounded-1">
-            <div class="mt-2 nowrap font-weight-bold">
-                Channel Manager
-            </div>
-        </div>
-        <!-- Revenue Manager -->
-        <div class="mb-3 text-black col-4 col-md-3 col-lg-2 col-xl">
-            <img src="{{ asset('assets/images/apps/revenue-manager.png')}}" height="70px" alt="Revenue Manager" class="rounded-1">
-            <div class="mt-2 nowrap font-weight-bold">
-                Revenue Manager
-            </div>
-        </div>
-        <!-- Reporting and Analytics -->
-        <div class="mb-3 text-black col-4 col-md-3 col-lg-2 col-xl">
-            <img src="{{ asset('assets/images/apps/analytics.png')}}" height="70px" alt="Reporting and Analytics" class="rounded-1">
-            <div class="mt-2 nowrap font-weight-bold">
-                Reporting and Analytics
-            </div>
-        </div>
-        <!-- Front desk -->
-        <div class="mb-3 text-black col-4 col-md-3 col-lg-2 col-xl">
-            <img src="{{ asset('assets/images/apps/front-desk.png')}}" height="70px" alt="Front-desk" class="rounded-1">
-            <div class="mt-2 nowrap font-weight-bold">
-                Front-desk
-            </div>
-        </div>
-        <!-- Housekeeping -->
-        <div class="mb-3 text-black col-4 col-md-3 col-lg-2 col-xl">
-            <img src="{{ asset('assets/images/apps/housekeeping.png')}}" height="70px" alt="Housekeeping" class="rounded-1">
-            <div class="mt-2 nowrap font-weight-bold">
-                Housekeeping
-            </div>
-        </div>
+
       </div>
 
       <!-- Demo CTA -->
-      <div class="mt-3 text-center text-black col-12">
+      <div class="pt-3 mt-3 text-center text-black col-12">
         <p>
             All our plans include <strong>unlimited support</strong> , <strong>hosting</strong> and <strong>maintenance</strong> . No hidden fees, no feature or data limits: enjoy true transparency!
         </p>
@@ -520,86 +334,120 @@
     </div>
  </section>
 <!-- Pricing -->
-         
+
 <!-- Testimonials -->
 <section class="testimonial-section">
     <div class="container">
-      <h2 class="mb-4 text-center font-weight-bold heading caveat" data-aos="fade-up" data-aos-delay="0">
-        How we shape the industry and help you succeed
+      <h2 class="mb-5 text-center font-weight-bold heading caveat" data-aos="fade-up" data-aos-delay="0">
+       {{__('Transforming the Industry to Empower Your Success')}}
       </h2>
       <div class="row align-items-center justify-content-between">
         <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
           <!-- testimonials -->
           <div class="shadow testimonial--wrap">
             <div class="owl-single owl-carousel no-dots no-nav">
-  
+
               <div class="testimonial-item">
                 <div class="mb-4 d-flex align-items-center">
                   <div class="mr-3 photo">
-                    <img src="{{ asset('assets/images/people/avatar-2.png')}}" alt="Image" class="img-fluid rounded-circle">
+                    <img src="{{ asset('assets/images/people/avatar-6.jpg')}}" alt="Image" class="img-fluid rounded-circle">
                   </div>
                   <div class="author">
-                    <cite class="mb-0 d-block">John Otieno</cite>
-                    <span>Manager, Sunrise Ltd.</span>
+                    <cite class="mb-0 d-block">John Mwangi</cite>
+                    <span>Hotel Manager, <b>Sunset View Resort</b></span>
                   </div>
                 </div>
                 <blockquote>
                   <p>&ldquo;
-                    Becoming a <strong>Kover</strong> was a turning point for our establishment. 
-                    Their personalized approach and constant support not only helped us optimize our processes but also gave us the confidence to aim higher. 
-                    Every day, we feel the positive impact of their solution on our productivity.
-                </blockquote>
-              </div>
-  
-              <div class="testimonial-item">
-                <div class="mb-4 d-flex align-items-center">
-                  <div class="mr-3 photo">
-                    <img src="{{ asset('assets/images/people/avatar-2.png')}}" alt="Image" class="img-fluid rounded-circle">
-                  </div>
-                  <div class="author">
-                    <cite class="mb-0 d-block">Ishaan Sanjay</cite>
-                    <span>Manager, <strong>Myrat Residence</strong>.</span>
-                  </div>
-                </div>
-                <blockquote>
-                  <p>&ldquo;
-                    The implementation of <strong>Ndako</strong> in the residence marked a clear improvement in the flow of our daily operations. Positive feedback from our clients on the speed and personalization of our service has never been so abundant.
+                    Before <strong>Ndako</strong>, managing our rooms, bookings, and guest communications was a nightmare. We spent hours each day just trying to keep everything organized. 
+                    With <strong>Ndako</strong>, we now have a centralized platform where everything is streamlined, and we can focus more on guest satisfaction rather than the backend. We’ve seen a 20% increase in guest retention!
                     &rdquo;</p>
                 </blockquote>
               </div>
+
+              <div class="testimonial-item">
+                <div class="mb-4 d-flex align-items-center">
+                  <div class="mr-3 photo">
+                    <img src="{{ asset('assets/images/people/avatar-12.jpg')}}" alt="Image" class="img-fluid rounded-circle">
+                  </div>
+                  <div class="author">
+                    <cite class="mb-0 d-block">Lillian Nyambura</cite>
+                    <span>Front Desk Manager, <strong>Oasis Hotel Nairobi</strong></span>
+                  </div>
+                </div>
+                <blockquote>
+                  <p>&ldquo;
+                    <strong>Ndako</strong>’s seamless integration has transformed how we manage our operations. 
+                    The user-friendly interface made it easy for our staff to adopt, and now we handle everything from bookings to invoicing in one place. 
+                    I highly recommend it to any hotelier who wants to save time and improve their workflow.
+                    &rdquo;</p>
+                </blockquote>
+              </div>
+
+              <div class="testimonial-item">
+                <div class="mb-4 d-flex align-items-center">
+                  <div class="mr-3 photo">
+                    <img src="{{ asset('assets/images/people/avatar-11.JPG')}}" alt="Image" class="img-fluid rounded-circle">
+                  </div>
+                  <div class="author">
+                    <cite class="mb-0 d-block">David Kamau</cite>
+                    <span>Operations Manager, <strong>Serene Suites Hotel</strong>.</span>
+                  </div>
+                </div>
+                <blockquote>
+                  <p>&ldquo;
+                    Thanks to <strong>Ndako</strong>, we’ve eliminated double bookings and our invoicing process is much faster. 
+                    The platform gives us more control over our revenue, and the insights we get are invaluable for improving operations.
+                    &rdquo;</p>
+                </blockquote>
+              </div>
+
             </div>
             <div class="custom-nav-wrap">
               <a href="#" class="custom-owl-prev"><span class="icon-keyboard_backspace"></span></a>
               <a href="#" class="custom-owl-next"><span class="icon-keyboard_backspace"></span></a>
             </div>
           </div>
-  
+
         </div>
       </div>
     </div>
+    
     <!-- call to action -->
-    <div class="container mt-5 mb-5 text-center">
-      <h3 class="mb-5 text-center caveat display-1" style="font-size: 62px;">
-        Explore your growth potential!
-      </h3>
-      <a href="{{ route('demo') }}" class="btn btn-lg b-primary font-weight-bold">
-        Get started - It's free
-      </a>
-      <small class="mt-3 d-block" style="font-size: 14px;">No payment required</small>
-    </div>
-  
+
 </section>
 <!-- Testimonials -->
+
+
+<!-- CTA -->
+<section class="p-4" style="margin-bottom: 25px;">
+    <h3 class="mb-5 text-center caveat" style="font-size: 62px; line-height: 1.3;">
+        Get started in 30 seconds. <br />
+        Free for 7 days.
+    </h3>
+    <div class="text-center">
+        <div class="mb-5" style="font-size: 20px; max-width: 700px; margin: 0 auto;">
+            {{ __('Streamline your business operations and bring your properties, guests, and team together in one powerful, easy-to-use platform.') }}
+        </div>
+        
+        <a href="{{ route('demo') }}" class="btn btn-lg b-primary font-weight-bold">
+            Get started
+        </a>
+        <button class="btn btn-light">Book a demo</button>
+        <small class="mt-3 d-block" style="font-size: 14px;">No payment required</small>
+    </div>
+</section>
+<!-- CTA -->
 
 <!-- FAQ -->
 <section class="pt-12 pb-16 text-center">
     <div class="container">
-      <h3 class="caveat" style="font-size: 59px;">Frequently Asked Questions</h3>
+      <h3 class="caveat" style="font-size: 59px; margin-bottom: 20px;">Frequently Asked Questions</h3>
       <div class="text-center row">
         <div class="col-lg-12">
           <div class="custom-accordion" id="accordion_1">
-              <!-- accordion -->
-              <div class="accordion-item">
+            <!-- accordion -->
+            <div class="accordion-item">
                 <h2 class="mb-0">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         What is <strong>Ndako</strong>?
@@ -607,7 +455,7 @@
                 </h2>
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion_1">
                     <div class="accordion-body">
-                        Ndako is an integrated SaaS platform designed to simplify and optimize property and rental management, offering solutions for property listings, guest services, tenant management, and financial reporting.
+                        Ndako is an all-in-one SaaS platform designed to streamline hotel operations, providing solutions for reservations, guest management, invoicing, reporting, and direct bookings, all in a single, easy-to-use system.
                     </div>
                 </div>
             </div>
@@ -616,13 +464,13 @@
             <!-- accordion -->
             <div class="accordion-item">
                 <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        How can Ndako help my property management business?
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Is Ndako suitable for small, independent hotels?
                     </button>
                 </h2>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion_1">
                     <div class="accordion-body">
-                        <strong>Ndako</strong> streamlines operations by automating tasks, centralizing data, and improving decision-making, all tailored for efficient property management.
+                        Yes! Ndako is designed to be flexible and scalable, catering to small, independent hotels as well as larger chains. It provides essential features like booking management, guest communication, and reporting without being overwhelming.
                     </div>
                 </div>
             </div>
@@ -631,13 +479,13 @@
             <!-- accordion -->
             <div class="accordion-item">
                 <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Is <strong>Ndako</strong> suitable for different types of property businesses?
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Do I need technical skills to use Ndako?
                     </button>
                 </h2>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion_1">
                     <div class="accordion-body">
-                        Yes, <strong>Ndako</strong> is built to support a range of property management needs, from small rental properties to multi-unit portfolios, adaptable to various real estate sectors.
+                        No technical skills are required to use Ndako. The platform is designed to be user-friendly and intuitive. You'll have access to an easy-to-navigate interface and customer support if needed.
                     </div>
                 </div>
             </div>
@@ -646,13 +494,13 @@
             <!-- accordion -->
             <div class="accordion-item">
                 <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        How long does it take to set up <strong>Ndako</strong> for my business?
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        How does Ndako help me manage bookings?
                     </button>
                 </h2>
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion_1">
                     <div class="accordion-body">
-                        Setup times vary based on the size of your portfolio and process complexity, but we aim to make onboarding as smooth as possible, often within a few weeks.
+                        Ndako offers seamless booking management by allowing you to view and manage all your bookings in one place. It integrates with popular booking channels, ensuring that you never overbook and that you can quickly update availability and prices.
                     </div>
                 </div>
             </div>
@@ -661,13 +509,13 @@
             <!-- accordion -->
             <div class="accordion-item">
                 <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        Can <strong>Ndako</strong> integrate with my existing systems?
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        How much does Ndako cost for hotels?
                     </button>
                 </h2>
                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion_1">
                     <div class="accordion-body">
-                        Yes, <strong>Ndako</strong> is designed to integrate smoothly with various property and financial systems via flexible APIs, enabling a seamless data transition.
+                        Ndako offers flexible pricing plans based on the size of your hotel and your specific needs. There is a free trial for the first 7 days, and after that, we offer affordable subscription plans based on the number of users and features required.
                     </div>
                 </div>
             </div>
@@ -676,13 +524,13 @@
             <!-- accordion -->
             <div class="accordion-item">
                 <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        How can I train my team to use <strong>Ndako</strong>?
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Does Ndako integrate with other booking engines or PMS?
                     </button>
                 </h2>
                 <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion_1">
                     <div class="accordion-body">
-                        <strong>Ndako</strong> provides online tutorials, webinars, and tailored training sessions to ensure your team becomes proficient quickly.
+                        Yes! Ndako integrates with multiple booking engines and Property Management Systems (PMS). You can easily sync bookings, update availability, and manage your property data across different channels, all from within the Ndako platform.
                     </div>
                 </div>
             </div>
@@ -691,13 +539,13 @@
             <!-- accordion -->
             <div class="accordion-item">
                 <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                        Can I customize <strong>Ndako</strong> to meet my specific business needs?
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        How does Ndako handle payments and invoicing?
                     </button>
                 </h2>
                 <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion_1">
                     <div class="accordion-body">
-                        Absolutely, <strong>Ndako</strong> offers extensive customization options to align with your unique property management processes.
+                        Ndako streamlines your payment and invoicing processes. You can set up automatic billing for guests, track payments, and generate invoices. Ndako also integrates with payment gateways for seamless transactions.
                     </div>
                 </div>
             </div>
@@ -706,13 +554,13 @@
             <!-- accordion -->
             <div class="accordion-item">
                 <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                        How can I add new users to <strong>Ndako</strong>?
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        Is my hotel’s data secure on Ndako?
                     </button>
                 </h2>
                 <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion_1">
                     <div class="accordion-body">
-                        Adding new users is simple and can be done directly within your business portal, typically by adding new staff members to your organization’s Ndako account.
+                        Yes, security is a top priority for Ndako. We implement industry-leading encryption protocols to ensure that your hotel’s data is safe and secure. We also regularly conduct security audits to protect against any potential vulnerabilities.
                     </div>
                 </div>
             </div>
@@ -721,303 +569,42 @@
             <!-- accordion -->
             <div class="accordion-item">
                 <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                        How does <strong>Ndako</strong> protect my business data?
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Can I access Ndako from my mobile device?
                     </button>
                 </h2>
                 <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion_1">
                     <div class="accordion-body">
-                        <strong>Ndako</strong> uses advanced security protocols, including data encryption, firewalls, and continuous monitoring, to safeguard your information.
+                        Yes! Ndako is mobile-responsive, so you can manage your property, bookings, and finances directly from your mobile device, whether you’re on-site or on the go.
                     </div>
                 </div>
             </div>
             <!-- accordion -->
-
+            
             <!-- accordion -->
             <div class="accordion-item">
                 <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                        Who can access my business data on <strong>Ndako</strong>?
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        How can I pay for my Ndako subscription?
                     </button>
                 </h2>
                 <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion_1">
                     <div class="accordion-body">
-                        Only users you authorize can access your business data, with customizable access levels according to their roles and responsibilities.
+                        You can easily pay for your Ndako subscription through a variety of methods:
+                        <br>
+                        <strong>Credit or Debit Card:</strong> We accept all major credit and debit cards.
+                        <br>
+                        <strong>Mobile Money (M-Pesa, Airtel Money, etc.):</strong> Convenient payment options for East Africa.
+                        <br>
+                        <strong>Bank Transfer:</strong> If you prefer to pay via bank transfer, you can contact our support team for bank details.
+                        <br>
+                        <strong>Online Payment Gateways:</strong> We also accept payments through popular online platforms like PayPal and Stripe.
+                        <br>
+                        After selecting your preferred payment method, you can proceed to the checkout page and complete your payment securely.
                     </div>
                 </div>
             </div>
             <!-- accordion -->
-
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                        What are the key features of <strong>Ndako</strong>?
-                    </button>
-                </h2>
-                <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        Key features include property listings, tenant management, basic financial reporting, and guest/tenant portals.
-                    </div>
-                </div>
-            </div>
-            <!-- accordion -->
-
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                        Does <strong>Ndako</strong> offer reporting and analytics?
-                    </button>
-                </h2>
-                <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        Yes, <strong>Ndako</strong> provides real-time insights, daily email reports, and analytics to help you understand your property’s performance and make data-driven decisions.
-                    </div>
-                </div>
-            </div>
-            <!-- accordion -->
-
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-                        What kind of support does <strong>Ndako</strong> offer?
-                    </button>
-                </h2>
-                <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        <strong>Ndako</strong> offers full customer support, including assistance by phone, email, live chat, and access to online resources.
-                    </div>
-                </div>
-            </div>
-            <!-- accordion -->
-
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
-                        What is <strong>Ndako</strong>'s pricing structure?
-                    </button>
-                </h2>
-                <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        <strong>Ndako</strong> offers tiered pricing plans to suit various needs, including a free Basic plan for smaller users and paid options like the Spark plan for expanded functionality and more extensive user management. Contact us for Enterprise-level customization and multi-property support.
-                    </div>
-                </div>
-            </div>
-            <!-- accordion -->
-
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
-                        How do I get started with <strong>Ndako</strong>?
-                    </button>
-                </h2>
-                <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        You can sign up for <strong>Ndako</strong> on our website, choose your plan, and start setting up your property management tools. Our team is available to guide you through onboarding to ensure you’re set up for success.
-                    </div>
-                </div>
-            </div>
-            <!-- accordion -->
-
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">What should I do if I encounter a bug or technical issue with <strong>Ndako</strong>?</button>
-                </h2>
-            
-                <div id="collapseNineteen" class="collapse" aria-labelledby="headingNineteen" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        If you experience a technical issue, please contact our support team immediately. We are committed to resolving any problems as quickly as possible to minimize any impact on your business operations.
-                    </div>
-                </div>
-            
-            </div>
-            <!-- accordion -->
-
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">How does <strong>Ndako</strong> handle service interruptions?</button>
-                </h2>
-            
-                <div id="collapseTwenty" class="collapse" aria-labelledby="headingTwenty" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        We have established strict protocols to manage service interruptions, including regular backups and disaster recovery plans, to ensure maximum availability of our service.
-                    </div>
-                </div>
-            
-            </div>
-            <!-- accordion -->
-             
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyOne" aria-expanded="false" aria-controls="collapseTwentyOne"><strong>Ndako</strong> enables collaborative work between teams, right?</button>
-                </h2>
-            
-                <div id="collapseTwentyOne" class="collapse" aria-labelledby="headingTwentyOne" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        Yes, <strong>Ndako</strong> facilitates real-time collaboration between teams, allowing for information sharing, project management, and effective communication within your organization.
-                    </div>
-                </div>
-            
-            </div>
-            <!-- accordion -->
-             
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyTwo" aria-expanded="false" aria-controls="collapseTwentyTwo">How can I share reports or data with my team on <strong>Ndako</strong>?</button>
-                </h2>
-            
-                <div id="collapseTwentyTwo" class="collapse" aria-labelledby="headingTwentyTwo" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        Reports and data can be shared directly through the platform, with options to control access and visibility according to your team's needs.
-                    </div>
-                </div>
-            
-            </div>
-            <!-- accordion -->
-             
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyThree" aria-expanded="false" aria-controls="collapseTwentyThree">Can I access <strong>Ndako</strong> from my phone or tablet?</button>
-                </h2>
-            
-                <div id="collapseTwentyThree" class="collapse" aria-labelledby="headingTwentyThree" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        Yes, <strong>Ndako</strong> is accessible on mobile devices through a dedicated app or a web browser, allowing you to manage your business from anywhere.
-                    </div>
-                </div>
-            
-            </div>
-            <!-- accordion -->
-             
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyFour" aria-expanded="false" aria-controls="collapseTwentyFour">Are there any access restrictions to <strong>Ndako</strong> based on geographic location?</button>
-                </h2>
-            
-                <div id="collapseTwentyFour" class="collapse" aria-labelledby="headingTwentyFour" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        No, <strong>Ndako</strong> is designed to be accessible worldwide, as long as you have an internet connection.
-                    </div>
-                </div>
-            
-            </div>
-            <!-- accordion -->
-             
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyFive" aria-expanded="false" aria-controls="collapseTwentyFive">What are the technical requirements for using <strong>Ndako</strong>?</button>
-                </h2>
-            
-                <div id="collapseTwentyFive" class="collapse" aria-labelledby="headingTwentyFive" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        <strong>Ndako</strong> is designed to be lightweight and compatible with most modern systems. Specific requirements may vary depending on the modules you use, but generally, a stable internet connection and a recent web browser are sufficient.
-                    </div>
-                </div>
-            
-            </div> 
-            <!-- accordion -->
-             
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentySix" aria-expanded="false" aria-controls="collapseTwentySix"><strong>Ndako</strong> compatible with Mac and PC?</button>
-                </h2>
-            
-                <div id="collapseTwentySix" class="collapse" aria-labelledby="headingTwentySix" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        Yes, <strong>Ndako</strong> is fully compatible with both Mac and PC operating systems, ensuring maximum flexibility for your business.
-                    </div>
-                </div>
-            
-            </div>
-            <!-- accordion -->
-             
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentySeven" aria-expanded="false" aria-controls="collapseTwentySeven">Is <strong>Ndako</strong> compliant with privacy and data protection standards?</button>
-                </h2>
-            
-                <div id="collapseTwentySeven" class="collapse" aria-labelledby="headingTwentySeven" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        Yes, <strong>Ndako</strong> strictly adheres to privacy and data protection standards, ensuring the security and compliance of your information.
-                    </div>
-                </div>
-            
-            </div> 
-            <!-- accordion -->
-             
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyEight" aria-expanded="false" aria-controls="collapseTwentyEight">How can I delete my data from <strong>Ndako</strong> if necessary?</button>
-                </h2>
-            
-                <div id="collapseTwentyEight" class="collapse" aria-labelledby="headingTwentyEight" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        If you wish to delete your data, you can request it from our support team, who will ensure that your information is removed in accordance with our privacy policy and legal requirements.
-                    </div>
-                </div>
-            
-            </div>
-            <!-- accordion -->
-             
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyNine" aria-expanded="false" aria-controls="collapseTwentyNine">Can I use <strong>Ndako</strong> to manage multiple businesses?</button>
-                </h2>
-            
-                <div id="collapseTwentyNine" class="collapse" aria-labelledby="headingTwentyNine" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        Yes, <strong>Ndako</strong> allows you to manage multiple businesses under one account, making it easy to oversee various commercial activities.
-                    </div>
-                </div>
-            
-            </div>
-            <!-- accordion -->
-             
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirty" aria-expanded="false" aria-controls="collapseThirty">Is there a <strong>Ndako</strong> user community where I can share ideas and advice?</button>
-                </h2>
-            
-                <div id="collapseThirty" class="collapse" aria-labelledby="headingThirty" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        Yes, we encourage the creation of a dynamic <strong>Ndako</strong> user community, providing a space to exchange ideas, advice, and best practices for maximizing the use of the platform.
-                    </div>
-                </div>
-            
-            </div>
-            <!-- accordion -->
-             
-            <!-- accordion -->
-            <div class="accordion-item">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyOne" aria-expanded="false" aria-controls="collapseThirtyOne">How do I pay for my <strong>Ndako</strong> subscription?</button>
-                </h2>
-            
-                <div id="collapseThirtyOne" class="collapse" aria-labelledby="headingThirtyOne" data-parent="#accordion_1">
-                    <div class="accordion-body">
-                        Payments for <strong>Ndako</strong> subscriptions can be made through various secure online payment methods, including credit cards and local options.
-                    </div>
-                </div>
-            
-            </div>
-            <!-- accordion -->
-  
           </div>
         </div>
       </div>
@@ -1025,4 +612,21 @@
 </section>
 <!-- FAQ -->
 
+@endsection
+
+@section('scripts')
+<script>
+    function showTab(event, tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+      
+      document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+    }
+    
+    // Set the first tab as active by default
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelector(".tab-button").classList.add("active");
+    });
+  </script>
 @endsection

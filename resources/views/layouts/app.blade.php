@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Koverae">
     @yield('meta-tag')
-    
+
     <link rel="shortcut icon" href="{{asset('assets/images/logo/favicon.ico')}}">
     <title>@yield('page_title') - Ndako</title>
-    
+
     <script type="application/ld+json">{
         "@context": "http://schema.org",
         "@type": "Organization",
@@ -19,13 +19,13 @@
     <!-- Open Graph -->
     @yield('open-graph')
     <!-- Open Graph -->
-    
+
     <!-- Google tag (gtag.js) -->
     <!-- Google tag (gtag.js) -->
 
     <!-- Meta Pixel Code -->
     <!-- End Meta Pixel Code -->
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,13 +41,34 @@
     <link rel="stylesheet" href="{{ asset('assets/fonts/flaticon/font/flaticon.css?'.time() )}}">
     <link rel="stylesheet" href="{{ asset('assets/css/jquery.fancybox.min.css?'.time() )}}">
     <link rel="stylesheet" href="{{ asset('assets/css/aos.css?'.time() )}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css?'.time())}}">
-    
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    
+
     @yield('styles')
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/67969847825083258e0b4f31/1iii45m20';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <script src="http://lantern.koverae.localhost/embed-booking.js"></script>
+    <script>
+        LanternEmbed.init('form-container', 'http://lantern.koverae.localhost');
+    </script>
+
+    @livewireStyles
 
 </head>
 <body>
@@ -61,7 +82,7 @@
       <div class="site-mobile-menu-body"></div>
     </div>
 
-    <main class="container">
+    <main class="">
         <!-- Navbar -->
         <nav class="site-nav">
             <!-- Logo -->
@@ -95,7 +116,7 @@
                         </li>
                         @endif
                         <!-- Shopping Cart -->
-                        
+
                         @auth
                             <li class="has-children">
                                 <a href="#">{{ str()->limit(Auth::user()->first_name, 15) }}</a>
@@ -116,10 +137,12 @@
                                 </ul>
                             </li>
                         @else
-                            <li class=""><a href="{{ route('login') }}">Sign in</a></li>
+                            <li class=""><a href="{{ route('login') }}">Log in</a></li>
                         @endauth
 
-                        <li class="cta-button" id="trial-link"><a href="{{ route('demo') }}">Try it free</a></li>
+                        <li class="" style="height: 28px;" id="trial-link"><a style="height: 27px;color: #036165; font-size: 14px;" class="btn btn-light" href="{{ route('demo') }}">Book a demo</a></li>
+                        <li class="cta-button" id="trial-link"><a style="background-color: #036165; font-size: 14px;" href="{{ route('demo') }}">Try it free</a></li>
+                        {{-- <a class="mr-2 btn start-now" href="{{ route('demo') }}">Start for free</a> --}}
                     </ul>
 
                     <a href="#" class="ml-auto burger light site-menu-toggle js-menu-toggle d-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
@@ -129,7 +152,7 @@
             </div>
         </nav>
          <!-- Navbar -->
-    
+
          @yield('content')
 
     </main> <!-- END container -->
@@ -239,7 +262,9 @@
           });
       });
 
-      </script>
+    </script>
+
+    @livewireScripts
 
       @yield('scripts')
     </body>

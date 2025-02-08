@@ -15,7 +15,7 @@ class HomeController extends Controller
     // Trial
     public function trial(){
 
-        return view('trial');
+        return view('demo');
     }
 
     // Privacy Policies
