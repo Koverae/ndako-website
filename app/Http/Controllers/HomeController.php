@@ -2,57 +2,46 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\DemoRequest;
+use App\Mail\DemoRequestMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
-
-    public function home(){
-
+    public function index(){
         return view('home');
     }
 
-    // Trial
-    public function trial(){
-
-        return view('demo');
+    public function contactUs(){
+        return view('contact');
     }
 
-    // Privacy Policies
-    public function privacy(){
-
-        return view('privacy-policy');
+    public function demo(){
+        return view('request-demo');
     }
 
-    // About
-    public function help(){
+    public function storeDemo(DemoRequest $request)
+    {
+        $validated = $request->validated();
 
-        return view('help');
+        // Dispatch email to the queue
+        Mail::to('techie@ndako.koverae.com')
+            ->cc('laudbouetoumoussa@gmail.com')
+            ->send(new DemoRequestMail($validated));
+
+            return redirect()->route('demo')->with('success', 'Your demo request has been sent successfully!');
     }
 
-    // About
-    public function about(){
+    public function storeContact(DemoRequest $request)
+    {
+        $validated = $request->validated();
 
-        return view('about');
-    }
-    // Blog
-    public function blog(){
+        // Dispatch email to the queue
+        // Mail::to('techie@ndako.koverae.com')
+        //     ->cc('laudbouetoumoussa@gmail.com')
+        //     ->send(new DemoRequestMail($validated));
 
-        return view('blog.index');
-    }
-
-    public function blogSingle(){
-
-        return view('blog.show');
-    }
-
-    // Typo
-    public function typo(Request $request){
-
-        // Get the subdomain from the URL
-        $host = $request->get('esika');
-        $subdomain = explode('.', $host)[0]; // Extract the first part before the first dot
-
-        return view('errors.typo', compact('host', 'subdomain'));
+        return redirect()->route('demo')->with('success', 'Your message has been sent successfully!');
     }
 }

@@ -1,57 +1,16 @@
 <?php
 
-use App\Http\Controllers\DocController;
-use App\Http\Controllers\EarlyAdopterController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\OAuth\AuthorizationController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\TrialController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-Route::get('/', [HomeController::class, 'home'])->name('home');
-Route::get('/pricing', [HomeController::class, 'pricing'])->name('pricing');
-Route::get('/trial', [HomeController::class, 'trial'])->name('demo');
-Route::get('/privacy-policies', [HomeController::class, 'privacy'])->name('privacy');
-Route::get('/help', [HomeController::class, 'help'])->name('help');
-Route::get('/about', [HomeController::class, 'about'])->name('about');
-Route::get('/docs', [DocController::class, 'index'])->name('docs.index');
-Route::get('/kokoma', [HomeController::class, 'typo']);
-// Blog
-Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
-Route::get('/blog/ota-vs-hoel', [HomeController::class, 'blogSingle'])->name('blog.show');
-
-// Early Birds
-Route::post('save-early', [EarlyAdopterController::class, 'store'])->name('early');
-
-#Passport
-// http://your-laravel-app.com/oauth/authorize?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=view-profile+edit-profile"
-// Route::get('/oauth/authorize', [AuthorizationController::class, 'authorizeClient']);
-// Route::post('/oauth/approve', [AuthorizationController::class, 'approve'])->middleware('auth:api')->name('approve');
-// Route::post('/oauth/deny', [AuthorizationController::class, 'deny'])->name('deny');
-// Route::post('/oauth/token', [AuthorizationController::class, 'issueToken']);
-
-// Route::middleware('auth')->prefix('my-kover')->group(function () {
-//     Route::get('/shop/cart', [CartController::class, 'index'])->name('cart');
-//     Route::post('/shop/cart/add', [CartController::class, 'addToCart'])->name('cart.add');
+// Route::get('/', function () {
+//     return view('welcome');
 // });
 
-// Route::middleware(['auth', 'cart'])->group(function () {
-//     Route::get('/shop/cart/delete', [CartController::class, 'deleteCart'])->name('cart.destroy');
-//     Route::get('/shop/checkout', [CartController::class, 'ship'])->name('cart.ship');
-//     Route::post('/shop/checkout', [CartController::class, 'shipping'])->name('cart.shipping');
-//     Route::get('/shop/checkout/payment', [CartController::class, 'payment'])->name('cart.pay');
-//     Route::post('/shop/checkout/payment/stripe', [CartController::class, 'charge'])->name('cart.pay.stripe');
-// });
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-require __DIR__.'/auth.php';
+Route::get('/request-demo', [HomeController::class, 'demo'])->name('demo');
+Route::get('/contact-us', [HomeController::class, 'contactUs'])->name('contact');
+
+Route::post('/contact-us', [HomeController::class, 'storeContact'])->name('contact.store');
+Route::post('/request-demo', [HomeController::class, 'storeDemo'])->name('demo.store');
