@@ -24,6 +24,47 @@
 
   <!--Favicon-->
   <link rel="shortcut icon" href="{{ asset('assets/images/logo/favicon.ico')}}" type="image/x-icon" />
+  
+
+
+  <script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "",
+    "logo": "assets/images/logo/logo.png"
+    }
+</script>
+<!-- Open Graph -->
+@yield('open-graph')
+<!-- Open Graph -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HJ1L2Y7QS6"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HJ1L2Y7QS6');
+</script>
+<!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '291287213552434');
+    fbq('track', 'PageView');
+</script>
+
+<noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=291287213552434&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body class="relative overflow-x-hidden text-base antialiased bg-white dark:bg-dark-300 font-Inter">
@@ -394,7 +435,7 @@
         <ul class="flex items-center lg:ml-auto gap-15 max-lg:justify-center">
           <li>
             <a
-              href="#"
+              href="{{ route('privacy') }}"
               class="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100"
             >
               Privacy Policy
@@ -402,7 +443,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="{{ route('terms') }}"
               class="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100"
             >
               Terms & Conditions

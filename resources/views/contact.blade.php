@@ -2,6 +2,15 @@
 
 @section('title', 'Contact Us')
 
+@section('open-graph')
+<meta name="theme-color" content="#026469">
+<meta property="og:title" content="Ndako - Contact Us">
+<meta property="og:image" content="{{ asset('assets/images/logo/logo.png') }}" />
+<meta property="og:description" content="Need help? Contact our help desk for quick and friendly assistance." />
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.ndako.koverae.com/contact-us">
+@endsection
+
 @section('content')
 <section class="hero  overflow-hidden relative max-lg:pt-150 pt-[240px] pb-[60px] z-40">
   <div class="container">

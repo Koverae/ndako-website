@@ -2,6 +2,15 @@
 
 @section('title', 'Get a demo')
 
+@section('open-graph')
+<meta name="theme-color" content="#026469">
+<meta property="og:title" content="Ndako - Get a demo">
+<meta property="og:image" content="{{ asset('assets/images/logo/logo.png') }}" />
+<meta property="og:description" content="See Ndako in action" />
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.ndako.koverae.com/request-demo">
+@endsection
+
 @section('content')
 <section class="py-[200px] max-md:pt-150 relative overflow-hidden">
   <div
@@ -158,6 +167,7 @@
 
 
 <section class="relative pb-25 max-md:overflow-hidden">
+  
     <div class="container relative max-md:text-center">
       <div class="absolute left-1/2 -bottom-[442px] -translate-x-1/2  flex max-md:flex-col -z-10 max-md:hidden">
         <div

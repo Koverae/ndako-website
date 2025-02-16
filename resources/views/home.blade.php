@@ -2,6 +2,15 @@
 
 @section('title', 'Hotel Management made easy')
 
+@section('open-graph')
+<meta name="theme-color" content="#026469">
+<meta property="og:title" content="Ndako - Hotel Management System">
+<meta property="og:image" content="{{ asset('assets/images/logo/logo.png') }}" />
+<meta property="og:description" content="All-in-one hospitality platform" />
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.ndako.koverae.com">
+@endsection
+
 @section('content')
 <section
   class="hero crypto-hero bg-white dark:bg-dark-300 overflow-hidden relative max-lg:pt-[160px] max-lg:pb-150 pt-[230px] pb-150 cursor-fancy"

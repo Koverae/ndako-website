@@ -13,6 +13,14 @@ class HomeController extends Controller
         return view('home');
     }
 
+    public function privacy(){
+        return view('privacy-policy');
+    }
+
+    public function terms(){
+        return view('term-conditions');
+    }
+
     public function contactUs(){
         return view('contact');
     }
