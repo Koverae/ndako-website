@@ -723,24 +723,7 @@
             class="hidden w-full full dark:inline-block"
           />
         </div>
-        <div
-          class="absolute bottom-5 left-20 md:bottom-0 xl:bottom-8 md:left-[100px] xl:left-150 w-[280px] md:w-[200px] xl:w-[350px]"
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-duration="1000"
-          data-aos-once="true"
-        >
-          <img
-            src="{{asset('assets/images/vision/vision-image-2.png')}}"
-            alt="vision image shape"
-            class="w-full h-full dark:hidden"
-          />
-          <img
-            src="{{asset('assets/images/vision/vision-image-dark-2.png')}}"
-            alt="vision image shape"
-            class="hidden w-full h-full dark:inline-block"
-          />
-        </div>
+
       </div>
     </div>
   </div>
@@ -813,6 +796,7 @@
             data-aos-duration="1000"
             data-aos-once="true"
           />
+
           <div
             class="absolute left-0 right-auto bottom-8 top-auto max-w-[180px] md:max-w-[250px] xl:max-w-[344px]"
             data-aos="fade-right"
@@ -829,6 +813,23 @@
               src="{{asset('assets/images/about/onlinePayment-shape-dark.png')}}"
               alt="banking image"
               class="hidden dark:inline-block "
+            />
+          </div>
+          <div
+            class="absolute bottom-5 left-20 md:bottom-0 xl:bottom-8 md:left-[100px] xl:left-150 w- [280px] md:w-[200px] xl:w-[350px]"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-once="true">
+            <img
+              src="{{asset('assets/images/visa-card.png')}}"
+              alt="vision image shape"
+              class="w-full h-full rounded dark:hidden"
+            />
+            <img
+              src="{{asset('assets/images/visa-dark-2.png')}}"
+              alt="vision image shape"
+              class="hidden w-full h-full dark:inline-block"
             />
           </div>
 
@@ -891,12 +892,12 @@
         <div class="relative pt-150 lg:py-150 lg:px-150">
           <div class="w-[250px] lg:w-[300px] aspect-video relative mx-auto">
             <img
-              src="{{asset('assets/images/solution/solution.png')}}"
+              src="{{asset('assets/images/vision/vision-image.png')}}"
               alt="vision image"
               class="dark:hidden"
             />
             <img
-              src="{{asset('assets/images/solution/solution-dark.png')}}"
+              src="{{asset('assets/images/vision/vision-image-dark.png')}}"
               alt="vision image"
               class="hidden dark:inline-block"
             />
@@ -908,57 +909,21 @@
               data-aos-once="true"
             >
               <img
-                src="{{asset('assets/images/solution/solution-shape1.png')}}"
+                src="{{asset('assets/images/vision/vision-image.png')}}"
                 alt="vision image"
                 class="w-full dark:hidden"
               />
               <img
-                src="{{asset('assets/images/solution/solution-shape1-dark.png')}}"
+                src="{{asset('assets/images/vision/vision-image-dark.png')}}"
                 alt="vision image"
                 class="hidden w-full dark:inline-block"
               />
             </div>
-            <div
-              class="absolute right-12 top-12 lg:right-20 left-auto bottom-auto w-[280px] h-[190px] lg:w-[320px] lg:h-[230px] xl:w-[368px] xl:h-[280px]"
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-duration="1000"
-              data-aos-delay="100"
-              data-aos-once="true"
-            >
-              <img
-                src="{{asset('assets/images/solution/solution-shape2.png')}}"
-                alt="vision image"
-                class="w-full dark:hidden"
-              />
-              <img
-                src="{{asset('assets/images/solution/solution-shape2-dark.png')}}"
-                alt="vision image"
-                class="hidden w-full dark:inline-block"
-              />
-            </div>
-            <div
-              class="absolute left-[175px] -bottom-[70px] lg:-bottom-[86px] lg:left-[200px] right-auto top-auto w-[150px] lg:w-[170px] aspect-video"
-              data-aos="fade-left"
-              data-aos-offset="200"
-              data-aos-duration="1000"
-              data-aos-delay="200"
-              data-aos-once="true"
-            >
-              <img
-                src="{{asset('assets/images/solution/solution-shape3.png')}}"
-                alt="vision image"
-                class="w-full dark:hidden"
-              />
-              <img
-                src="{{asset('assets/images/solution/solution-shape3-dark.png')}}"
-                alt="vision image"
-                class="hidden w-full dark:inline-block"
-              />
-            </div>
+            
           </div>
         </div>
       </div>
+      
       <div class="max-md:order-1 lg:-mt-15">
         <p class="section-tagline">More direct bookings, more revenue</p>
 
@@ -2114,7 +2079,7 @@
 
       <div class="flex items-center justify-center">
         <a href="#" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
-            💬 Drop your testimony 
+            💬 Drop your testimony
         </a>
         <a href="https://dashboard.koverae.com/web/getting_started" class="btn">
             🚀 Get started now

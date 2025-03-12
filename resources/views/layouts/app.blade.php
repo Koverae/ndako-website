@@ -104,7 +104,7 @@
     id="top-nav"
   >
     <p class="font-medium max-lg:text-sm text-paragraph dark:text-paragraph">
-        Get 35% off your first subscription – <a href="#">Sign up now!</a>
+        Get 35% off your first subscription – <a href="https://dashboard.koverae.com/web/getting_started?utm=ndako-website">Sign up now!</a>
     </p>
   </div>
 
@@ -166,12 +166,12 @@
         </button>
       </li>
       <li class="max-lg:hidden">
-        <a href="{{ route('demo') }}" class="btn-sm bg-white dark:!bg-white dark:!text-paragraph btn-outline cursor-fancy">
-          Book demo
+        <a href="https://dashboard.koverae.com/web/login" class="btn-sm bg-white dark:!bg-white dark:!text-paragraph btn-outline cursor-fancy">
+          Sign In
         </a>
       </li>
       <li class="max-lg:hidden">
-        <a href="http://app.koverae.com/getting_started" target="_blank" class="btn btn-navbar btn-sm">
+        <a href="http://dashboard.koverae.com/web/getting_started" target="_blank" class="btn btn-navbar btn-sm">
           Start free
         </a>
       </li>
@@ -290,7 +290,7 @@
         <ul class="[&>*:not(:last-child)]:mb-3">
           <li>
             <a
-              href="https://ndako.tawk.help/"
+              href="https://ndako.koverae.com/docs"
               target="_blank"
               class="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100"
             >
