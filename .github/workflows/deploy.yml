@@ -25,8 +25,8 @@ jobs:
     - name: Setup SSH Key
       run: |
         mkdir -p ~/.ssh
-        echo "${{ secrets.NDAKO_WEBSITE_SSH }}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
+        echo "${{ secrets.NDAKO_WEBSITE_SSH }}" > ~/.ssh/NDAKO_WEBSITE_SSH
+        chmod 600 ~/.ssh/NDAKO_WEBSITE_SSH
         eval "$(ssh-agent -s)"
 
     - name: Deploy Files to cPanel
