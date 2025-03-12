@@ -262,7 +262,7 @@
             A simple and efficient cloud-based hotel management software designed for small and medium-sized hotels. Easily manage bookings, guests, and invoicing, all in one place. 🚀
           </p>
           <div class="flex items-center justify-center gap-4 mx-auto mb-10 max-md:flex-col">
-            <a href="#" class="btn cursor-fancy">
+            <a href="https://dashboard.koverae.com/web/getting_started" target="__blank" target="_blank"  class="btn cursor-fancy">
                 Start your 7-day free trial
             </a>
             <a href="#pricing" class="bg-white dark:!bg-white dark:!text-paragraph btn-outline cursor-fancy">
@@ -358,7 +358,7 @@
         <a href="{{ route('demo') }}" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
             Book demo
         </a>
-        <a href="" class="btn">
+        <a href="https://dashboard.koverae.com/web/getting_started" target="__blank" target="_blank" class="btn">
             Start your Journey
         </a>
     </div>
@@ -384,7 +384,7 @@
             <a href="{{ route('demo') }}" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
                 Book demo
             </a>
-            <a href="#" class="btn">
+            <a href="https://dashboard.koverae.com/web/getting_started" target="__blank" class="btn">
                 🚀 Get started
             </a>
           </div>
@@ -684,7 +684,7 @@
         <a href="{{ route('demo') }}" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
             Book demo
         </a>
-        <a href="#" class="btn">
+        <a href="https://dashboard.koverae.com/web/getting_started" target="__blank" class="btn">
             🚀 Get started
         </a>
       </div>
@@ -992,7 +992,7 @@
         <a href="{{ route('demo') }}" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
             Book demo
         </a>
-        <a href="#" class="btn">
+        <a href="https://dashboard.koverae.com/web/getting_started" target="__blank" class="btn">
             Get started
         </a>
 
@@ -1012,7 +1012,7 @@
             Ndako connects with the tools you already use, making your workflow smoother. Sync reservations, payments, and guest data effortlessly across multiple platforms.
         </p>
 
-        <a href="#" class="btn-outline">
+        <a href="https://dashboard.koverae.com/web/getting_started" target="__blank" class="btn-outline">
             Get started
         </a>
     </div>
@@ -1732,7 +1732,7 @@
           />
         </div>
       </div>
-      <div class="bg-white dark:bg-dark-200 shadow-box  p-2.5 w-25 aspect-square rounded-full mx-auto">
+      <div class="bg-white dark:bg-dark-200 shadow-box  p-2.5 w-25 aspect-square rounded-full !mx-auto">
         <div
           class="flex items-center justify-center text-center border border-gray-100 border-dashed rounded-full dark:border-borderColour-dark aspect-square "
         >
@@ -1768,9 +1768,9 @@
             ></div>
             <span class="ms-2.5 text-base font-semibold text-paragraph dark:text-white py-5">Yearly</span>
             <div class="flex">
-              <span class=" -mr-4 bg-primary text-paragraph py-1.5 px-3 rounded-full font-medium"> Save 40% </span>
+              <span class=" -mr-4 bg-primary text-paragraph py-1.5 px-3 rounded-full font-medium"> Save 35% </span>
             </div>
-          </label>
+          </label>!:
         </div>
       </div>
 
@@ -1794,16 +1794,15 @@
             <div class="p-8 border border-gray-100 border-dashed rounded dark:border-borderColour-dark max-md:p-5">
               <h3 class="mb-2">Ndako Starter</h3>
               <p class="mb-6">
-                For <b>1-10 rooms</b> | Ideal for small hotels, boutique stays, and guesthouses
+                For <b>1-15 rooms</b> <br /> Ideal for small hotels, boutique stays, and guesthouses
               </p>
               <div class="mb-16 price-month">
-                <h2>KSh <span>5,700 <sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 9,500</sup></span> </h2>
-                <p>Per month</p>
+                <h2>Free</h2>
+                <p>&nbsp;</p>
               </div>
               <div class="mb-16 price-year">
-                <h2>KSh <span>68,400</span><br/>
-                    <sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 114,000</sup></h2>
-                <p>Per year</p>
+                <h2>Free</h2>
+                <p>&nbsp;</p>
               </div>
 
               <ul
@@ -1836,9 +1835,8 @@
                 </li>
 
               </ul>
-
-              <a href="#" class="w-full py-3 text-center btn-outline dark:bg-transparent">
-                Start for free
+              <a href="https://dashboard.koverae.com/web/getting_started" target="__blank"  class="w-full py-3 text-center uppercase btn-outline dark:bg-transparent">
+                Start Now
               </a>
             </div>
           </div>
@@ -1847,15 +1845,15 @@
             <div class="p-8 border border-gray-100 border-dashed rounded dark:border-borderColour-dark max-md:p-5">
               <h3 class="mb-2">Ndako Spark</h3>
               <p class="mb-6">
-                For <b>11-45 rooms</b> | Mid-sized hotels seamlessly streamlining daily business operations.
+                For <b>11-105 rooms</b><br /> Mid-sized hotels seamlessly streamlining daily business operations.
               </p>
               <div class="mb-16 price-month">
-                  <h2>KSh <span>9,000<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 15,000</sup></span></h2>
-                  <p>Per month</p>
+                  <h2>KSh <span>312<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 480</sup></span></h2>
+                  <p>Per <b>room</b> month</p>
               </div>
               <div class="mb-16 price-year">
-                  <h2>KSh<span>108,000<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 180,000</sup></span></h2>
-                  <p>Per year</p>
+                  <h2>KSh <span>260<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 400</sup></span></h2>
+                  <p>Per <b>room</b> month</p>
               </div>
 
               <ul
@@ -1889,7 +1887,7 @@
               </ul>
 
               <a
-                href="#"
+                href="https://dashboard.koverae.com/web/getting_started" target="__blank"
                 class="w-full py-3 text-center btn"
               >
                 Start for free
@@ -1900,15 +1898,15 @@
             <div class="p-8 border border-gray-100 border-dashed rounded dark:border-borderColour-dark max-md:p-5">
               <h3 class="mb-2">Premium</h3>
               <p class="mb-6">
-                For <b>46-150 rooms</b> | Larger properties and hotel chains requiring advanced features.
+                For <b>106+ rooms</b><br />  Larger properties and hotel chains requiring advanced features.
               </p>
               <div class="mb-16 price-month">
-                <h2>KSh <span>750<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 1,250</sup></span></h2>
-                <p>Per room per month</p>
+                <h2>KSh<span>422<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 650</sup></span></h2>
+                <p>Per <b>room</b> month</p>
               </div>
               <div class="mb-16 price-year">
-                <h2>KSh <span>9,000<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 15,000</sup></span></h2>
-                <p>Per room per year</p>
+                <h2>KSh <span>350<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 540</sup></span></h2>
+                <p>Per <b>room</b> month</p>
               </div>
 
               <ul
@@ -1941,14 +1939,26 @@
               </ul>
 
               <a
-                href="#"
-                class="w-full py-3 text-center btn-outline dark:bg-transparent"
+                href="https://dashboard.koverae.com/web/getting_started" target="__blank"
+                class="w-full py-3 text-center uppercase btn-outline dark:bg-transparent"
               >
                 Start for free
               </a>
             </div>
           </div>
 
+        </div>
+      </div>
+      
+
+      <div class="pt-3 mt-3 text-center text-black col-12">
+        <p>
+            All our plans include <strong>unlimited support</strong> , <strong>hosting</strong> and <strong>maintenance</strong>.
+            Clear pricing, no hidden fees, pay only for what you need!
+        </p>
+        <br />
+        <div>
+            (*) The discount is valid for 12 months, for the initial plan ordered.
         </div>
       </div>
     </div>
@@ -2106,7 +2116,7 @@
         <a href="#" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
             💬 Drop your testimony
         </a>
-        <a href="#" class="btn">
+        <a href="https://dashboard.koverae.com/web/getting_started" class="btn">
             🚀 Get started now
         </a>
       </div>
@@ -2210,7 +2220,7 @@
       <a href="{{ route('demo') }}" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
           Book demo
       </a>
-      <a href="" class="btn">
+      <a href="https://dashboard.koverae.com/web/getting_started" class="btn">
         🚀 Get Started Today
       </a>
       <ul

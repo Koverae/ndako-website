@@ -104,10 +104,9 @@
     id="top-nav"
   >
     <p class="font-medium max-lg:text-sm text-paragraph dark:text-paragraph">
-        Get 40% off your first subscription – <a href="#">Sign up now!</a>
+        Get 35% off your first subscription – <a href="#">Sign up now!</a>
     </p>
   </div>
-
 
   <header
   class="fixed left-0 top-15 z-[1000000000] duration-500  transition-all w-full bg-transparent"
@@ -143,6 +142,11 @@
         </a>
       </li>
       <li>
+        <a href="{{route('blog.index')}}" class="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ">
+            Our Blog
+        </a>
+      </li>
+      <li>
         <a href="{{route('home')}}#faq" class="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ">
             FAQs
         </a>
@@ -167,7 +171,7 @@
         </a>
       </li>
       <li class="max-lg:hidden">
-        <a href="#" class="btn btn-navbar btn-sm">
+        <a href="http://app.koverae.com/getting_started" target="_blank" class="btn btn-navbar btn-sm">
           Start free
         </a>
       </li>
@@ -220,6 +224,11 @@
         <li class="">
           <a href="{{route('home')}}#faq" class="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ">
             FAQs
+          </a>
+        </li>
+        <li class="">
+          <a href="{{route('blog.index')}}" class="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ">
+            Our Blog
           </a>
         </li>
 

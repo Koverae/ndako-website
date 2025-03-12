@@ -1,0 +1,52 @@
+name: Deploy Ndako Website to cPanel
+
+on:
+  push:
+    branches:
+      - main  # Change if your main branch has a different name
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.3'
+        extensions: mbstring, bcmath, gd, pdo, pdo_mysql
+
+    - name: Install Composer Dependencies
+      run: composer install --no-dev --optimize-autoloader
+
+    - name: Setup SSH Key
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.CPANEL_SSH_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        eval "$(ssh-agent -s)"
+        ssh-add ~/.ssh/id_rsa
+
+    - name: Deploy Files to cPanel
+      run: |
+        rsync -avz --delete \
+          --exclude='.git' \
+          --exclude='.github' \
+          --exclude='storage/' \
+          --exclude='.env' \
+          ./ c2029386c@ndako.koverae.com:/home/c2029386c/public_html/ndako/web/
+
+    - name: Run Laravel Commands on Server
+      run: |
+        ssh c2029386c@developer.koverae.com << 'EOF'
+          cd /home/c2029386c/public_html/ndako
+          php artisan migrate --force
+          php artisan config:clear
+          php artisan cache:clear
+          php artisan route:clear
+          php artisan view:clear
+          php artisan storage:link
+        EOF

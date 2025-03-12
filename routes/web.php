@@ -16,3 +16,6 @@ Route::get('/terms', [HomeController::class, 'terms'])->name('terms');
 
 Route::post('/contact-us', [HomeController::class, 'storeContact'])->name('contact.store');
 Route::post('/request-demo', [HomeController::class, 'storeDemo'])->name('demo.store');
+
+Route::get('/blog', [HomeController::class, 'blog'])->name('blog.index');
+Route::get('/blog/{slug}', [HomeController::class, 'blogShow'])->name('blog.show');
