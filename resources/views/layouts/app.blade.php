@@ -154,7 +154,7 @@
 
     </ul>
     <ul class="flex items-center ml-auto  [&>*:not(:last-child)]:me-2.5">
-      <li class="">
+      <li class="d-none" style="display: none;">
         <button
           class="bg-white dark:bg-dark-200 p-2.5 rounded-full "
           id="open-btn"
