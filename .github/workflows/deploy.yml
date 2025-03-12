@@ -29,7 +29,6 @@ jobs:
         chmod 600 ~/.ssh/NDAKO_WEBSITE_SSH
         ssh-keyscan -p 2222 ndako.koverae.com >> ~/.ssh/known_hosts
         eval "$(ssh-agent -s)"
-        ssh-add ~/.ssh/NDAKO_WEBSITE_SSH 
 
     - name: Deploy Files to cPanel
       run: |
