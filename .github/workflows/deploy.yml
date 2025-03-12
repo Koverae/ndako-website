@@ -31,12 +31,10 @@ jobs:
 
     - name: Deploy Files to cPanel
       run: |
-        rsync -avz --delete \
-          --exclude='.git' \
-          --exclude='.github' \
-          --exclude='storage/' \
-          --exclude='.env' \
-          ./ c2029386c@ndako.koverae.com:/home/c2029386c/public_html/ndako/web/
+        rsync -avz --delete --progress \
+        --exclude={'.git','.github','storage/','.env'} \
+        -e "ssh -p 2222" \
+        ./ c2029386c@ndako.koverae.com:/home/c2029386c/public_html/ndako/web/
 
     - name: Run Laravel Commands on Server
       run: |
