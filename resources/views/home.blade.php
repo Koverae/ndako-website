@@ -2114,7 +2114,7 @@
 
       <div class="flex items-center justify-center">
         <a href="#" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
-            💬 Drop your testimony
+            💬 Drop your testimony 
         </a>
         <a href="https://dashboard.koverae.com/web/getting_started" class="btn">
             🚀 Get started now
