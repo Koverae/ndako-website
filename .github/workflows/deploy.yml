@@ -25,7 +25,7 @@ jobs:
     - name: Setup SSH Key
       run: |
         mkdir -p ~/.ssh
-        echo "${{ secrets.CPANEL_SSH_KEY }}" > ~/.ssh/id_rsa
+        echo "${{ secrets.NDAKO_WEBSITE_SSH }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         eval "$(ssh-agent -s)"
         ssh-add ~/.ssh/id_rsa
@@ -42,7 +42,7 @@ jobs:
     - name: Run Laravel Commands on Server
       run: |
         ssh c2029386c@developer.koverae.com << 'EOF'
-          cd /home/c2029386c/public_html/ndako
+          cd /home/c2029386c/public_html/ndako/web
           php artisan migrate --force
           php artisan config:clear
           php artisan cache:clear
