@@ -25,21 +25,24 @@ jobs:
     - name: Setup SSH Key
       run: |
         mkdir -p ~/.ssh
-        echo "${{ secrets.CPANEL_SSH_KEY }}" > ~/.ssh/NDAKO_WEBSITE_SSH
-        chmod 600 ~/.ssh/NDAKO_WEBSITE_SSH
+        echo "${{ secrets.NDAKO_WEBSITE_SSH }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
         ssh-keyscan -p 2222 ndako.koverae.com >> ~/.ssh/known_hosts
         eval "$(ssh-agent -s)"
+        ssh-add ~/.ssh/id_rsa
+      env:
+        NDAKO_WEBSITE_SSH: ${{ secrets.NDAKO_WEBSITE_SSH }}
 
     - name: Deploy Files to cPanel
       run: |
         rsync -avz --delete --progress \
         --exclude={'.git','.github','storage/','.env'} \
-        -e "ssh -i ~/.ssh/NDAKO_WEBSITE_SSH -p 2222" \
+        -e "ssh -i ~/.ssh/id_rsa -p 2222" \
         ./ c2029386c@ndako.koverae.com:/home/c2029386c/public_html/ndako/web/
 
     - name: Run Laravel Commands on Server
       run: |
-        ssh c2029386c@developer.koverae.com << 'EOF'
+        ssh -i ~/.ssh/id_rsa -p 2222 c2029386c@ndako.koverae.com << 'EOF'
           cd /home/c2029386c/public_html/ndako/web
           php artisan migrate --force
           php artisan config:clear
