@@ -25,10 +25,11 @@ jobs:
     - name: Setup SSH Key
       run: |
         mkdir -p ~/.ssh
-        echo "${{ secrets.CPANEL_SSH_KEY }}" > ~/.ssh/NDAKO_WEBSITE_SSH
+        echo "${{ secrets.NDAKO_WEBSITE_SSH }}" > ~/.ssh/NDAKO_WEBSITE_SSH
         chmod 600 ~/.ssh/NDAKO_WEBSITE_SSH
         ssh-keyscan -p 2222 ndako.koverae.com >> ~/.ssh/known_hosts
         eval "$(ssh-agent -s)"
+        ssh-add ~/.ssh/NDAKO_WEBSITE_SSH 
 
     - name: Deploy Files to cPanel
       run: |
