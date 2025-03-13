@@ -62,7 +62,7 @@
                 @endforeach
                 <br>
 
-                <a href="{{ route('blog.show', $blog->slug) }}">
+                <a href="{{ route('blog.show', $blog->slug) }}#title">
                   <h3 class="mb-1 font-semibold leading-[1.33]">
                     {{ $blog->title }}
                   </h3>
@@ -92,7 +92,7 @@
                     {!! Str::limit($blog->body, 252) !!}
                 </p>
                 <a
-                  href="{{ route('blog.show', $blog->slug) }}"
+                  href="{{ route('blog.show', $blog->slug) }}#title"
                   class="mt-2 btn-outline btn-sm"
                 >
                   Read More

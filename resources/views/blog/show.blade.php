@@ -37,12 +37,12 @@
 
     <div class="p-2.5 bg-white dark:bg-dark-200 rounded-medium overflow-hidden shadow-box mb-16 max-md:h-[400px]">
       <img
-        src="{{ asset('assets/images/blog/blogDetails.png') }}"
+        src="{{ asset('assets/images/home/blog.png') }}"
         alt="about images"
         class="w-full rounded max-md:object-cover max-md:object-center max-md:h-full"
       />
     </div>
-    <div class="blog-details">
+    <div class="blog-details" id="title">
       <h2>{{ $blog->title }}</h2>
       <div class="flex items-center mb-12 gap-x-2 ">
         <p>{{ $blog->author->name }}</p>

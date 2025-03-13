@@ -323,7 +323,7 @@
 
           <div class="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative">
             <img
-              src="{{asset('assets/images/ai/ai-hero.png')}}"
+              src="{{asset('assets/images/home/ndako.png')}}"
               alt="service images"
               class="w-full rounded"
             />
@@ -690,7 +690,7 @@
       </div>
       <div class="relative max-md:mt-150">
         <img
-          src="{{asset('assets/images/vision/vision-image.png')}}"
+          src="{{asset('assets/images/home/3.png')}}"
           alt="vision image"
           class="w-[260px] xl:w-[310px] dark:hidden"
           data-aos="fade-up"
@@ -698,7 +698,7 @@
           data-aos-duration="1000"
           data-aos-once="true"/>
         <img
-          src="{{asset('assets/images/vision/vision-image-dark.png')}}"
+          src="{{asset('assets/images/home/3.png')}}"
           alt="vision image"
           class="w-[260px] xl:w-[310px] hidden dark:inline-block"
           data-aos="fade-up"
@@ -713,12 +713,12 @@
           data-aos-once="true"
         >
           <img
-            src="{{asset('assets/images/vision/vision-image-1.png')}}"
+            src="{{asset('assets/images/home/4.png')}}"
             alt="vision image shape"
             class="w-full full dark:hidden"
           />
           <img
-            src="{{asset('assets/images/vision/vision-image-dark-1.png')}}"
+            src="{{asset('assets/images/home/4.png')}}"
             alt="vision image shape"
             class="hidden w-full full dark:inline-block"
           />
@@ -783,12 +783,13 @@
     <div class="grid items-end grid-cols-2 gap-10 max-md:grid-cols-1 1xl:gap-x-24">
         <div class="relative flex items-center justify-end max-md:justify-center">
           <img
-            src="{{asset('assets/images/about/onlinePayment.png')}}"
+            src="{{asset('assets/images/home/11.png')}}"
             alt="banking image"
+            height=""
             class="dark:hidden max-w-[250px] lg:max-w-[320px] xl:max-w-[420px]"
           />
           <img
-            src="{{asset('assets/images/about/onlinePayment-dark.png')}}"
+            src="{{asset('assets/images/home/11.png')}}"
             alt="banking image"
             class="hidden dark:inline-block  max-w-[250px] lg:max-w-[320px] xl:max-w-[420px]"
             data-aos="fade-up"
@@ -805,12 +806,12 @@
             data-aos-once="true"
           >
             <img
-              src="{{asset('assets/images/about/onlinePayment-shape.png')}}"
+              src="{{asset('assets/images/home/solution-shape2.png')}}"
               alt="banking image"
               class="dark:hidden"
             />
             <img
-              src="{{asset('assets/images/about/onlinePayment-shape-dark.png')}}"
+              src="{{asset('assets/images/home/solution-shape2-dark.png')}}"
               alt="banking image"
               class="hidden dark:inline-block "
             />
@@ -823,12 +824,12 @@
             data-aos-once="true">
             <img
               src="{{asset('assets/images/visa-card.png')}}"
-              alt="vision image shape"
+              alt="Visa card"
               class="w-full h-full rounded dark:hidden"
             />
             <img
-              src="{{asset('assets/images/visa-dark-2.png')}}"
-              alt="vision image shape"
+              src="{{asset('assets/images/visa-card-dark.png')}}"
+              alt="Visa card"
               class="hidden w-full h-full dark:inline-block"
             />
           </div>
@@ -890,35 +891,17 @@
     <div class="grid items-center grid-cols-2 gap-10 max-md:grid-cols-1 1xl:gap-x-24">
       <div class="max-md:order-2">
         <div class="relative pt-150 lg:py-150 lg:px-150">
-          <div class="w-[250px] lg:w-[300px] aspect-video relative mx-auto">
+          <div class="w-[350px] lg:w-[600px] aspect-video relative mx-auto">
             <img
-              src="{{asset('assets/images/vision/vision-image.png')}}"
+              src="{{asset('assets/images/home/website.png')}}"
               alt="vision image"
               class="dark:hidden"
             />
             <img
-              src="{{asset('assets/images/vision/vision-image-dark.png')}}"
+              src="{{asset('assets/images/home/website-dark.png')}}"
               alt="vision image"
               class="hidden dark:inline-block"
             />
-            <div
-              class="absolute left-10 -top-[130px] lg:-top-[185px] lg:left-15 right-auto bottom-auto w-[250px] h-[150px] lg:w-[280px] lg:h-[180px] xl:w-[320px] xl:h-[230px]"
-              data-aos="fade-left"
-              data-aos-offset="200"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            >
-              <img
-                src="{{asset('assets/images/vision/vision-image.png')}}"
-                alt="vision image"
-                class="w-full dark:hidden"
-              />
-              <img
-                src="{{asset('assets/images/vision/vision-image-dark.png')}}"
-                alt="vision image"
-                class="hidden w-full dark:inline-block"
-              />
-            </div>
             
           </div>
         </div>
@@ -1853,7 +1836,7 @@
 
               <a
                 href="https://dashboard.koverae.com/web/getting_started" target="__blank"
-                class="w-full py-3 text-center btn"
+                class="w-full py-3 text-center uppercase btn"
               >
                 Start for free
               </a>
