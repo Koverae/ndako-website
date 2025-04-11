@@ -255,7 +255,7 @@
           />
 
           <p class="mb-8 font-medium uppercase max-lg:mb-4">Smart and simple hotel management</p>
-          <h1 class="mb-12 max-md:mb-8">
+          <h1 class="mb-12 max-md:mb-8 h1">
             Hotel Management made easy
           </h1>
           <p class="mb-12 max-md:mb-8 max-w-[590px] mx-auto">
@@ -328,7 +328,7 @@
               class="w-full rounded"
             />
             <a
-              href="https://www.youtube.com/embed/YE7VzlLtp-4?si=XvNRN6ztByvZQzqh"
+              href="#"
               data-fancybox
               class="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 cursor-fancy"
             >

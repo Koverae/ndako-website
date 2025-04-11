@@ -334,9 +334,9 @@
 
         <p class="mb-3">
           <a
-            href="tel:+254745908026"
+            href="tel:+254701489035"
             class="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-            +254 745 90 80 26
+            +254 701 48 90 35
           </a>
         </p>
         <ul class="flex items-center gap-4 max-lg:justify-center social-link">
@@ -361,7 +361,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://github.com/Koverae">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
@@ -377,7 +377,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.linkedin.com/showcase/98761083">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
@@ -392,34 +392,7 @@
               </svg>
             </a>
           </li>
-          <li>
-            <a href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-              >
-                <path
-                  d="M12.0604 11.9583C12.0604 11.0204 11.4224 11.0204 11.4224 11.0204H8.79375V13.0302H11.2565C11.684 13.0302 12.0604 12.8962 12.0604 11.9583Z"
-                  fill=""
-                />
-                <path
-                  d="M18.1408 13.0302C16.7499 13.0302 16.5521 14.4211 16.5521 14.4211H19.5125C19.5189 14.4211 19.538 13.0302 18.1408 13.0302Z"
-                  fill="#7D807B"
-                />
-                <path
-                  d="M11.4224 14.4211H8.80013V16.8328H11.1225C11.1608 16.8328 11.2182 16.8328 11.2884 16.8328C11.6648 16.8264 12.373 16.718 12.373 15.6589C12.373 14.4083 11.4224 14.4211 11.4224 14.4211Z"
-                  fill="#7D807B"
-                />
-                <path
-                  d="M14 1.75C7.24336 1.75 1.75 7.24336 1.75 14C1.75 20.7566 7.24336 26.25 14 26.25C20.7566 26.25 26.25 20.7566 26.25 14C26.25 7.24336 20.7566 1.75 14 1.75ZM16.1693 9.94857H19.8889V11.0587H16.1693V9.94857ZM14.2871 15.7737C14.2871 18.5236 11.4224 18.4342 11.4224 18.4342H6.73294V9.41901H11.4224C12.8516 9.41901 13.9745 10.2102 13.9745 11.818C13.9745 13.4322 12.5964 13.5342 12.5964 13.5342C14.4083 13.5342 14.2871 15.7737 14.2871 15.7737ZM21.2479 15.627H16.5776C16.5776 17.3049 18.1663 17.1965 18.1663 17.1965C19.6656 17.1965 19.6146 16.2267 19.6146 16.2267H21.2033C21.2033 18.8043 18.1152 18.6257 18.1152 18.6257C14.4147 18.6257 14.6508 15.1803 14.6508 15.1803C14.6508 15.1803 14.6444 11.7159 18.1152 11.7159C21.7583 11.7095 21.2479 15.627 21.2479 15.627Z"
-                  fill=""
-                />
-              </svg>
-            </a>
-          </li>
+          
         </ul>
       </div>
     </div>
@@ -440,7 +413,7 @@
     <div class="py-10 max-lg:text-center">
       <div class="flex gap-2 max-lg:flex-col lg:items-center">
         <p class="pb-0 mb-0"><span class="caveat" style="font-size: 25px;"> A <strong class=" font-weight-bolder"><a href="https://koverae.com">Koverae</a></strong>'s product</span></p>
-        <p class="max-lg:mb-10">@ <span id="date"></span> Koverae. All Rights Reserved</p>
+        <p class="max-lg:mb-10">@ <span id="date"></span> Koverae Technologies Ltd. All Rights Reserved</p>
         <ul class="flex items-center lg:ml-auto gap-15 max-lg:justify-center">
           <li>
             <a
