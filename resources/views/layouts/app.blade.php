@@ -417,7 +417,7 @@
         <ul class="flex items-center lg:ml-auto gap-15 max-lg:justify-center">
           <li>
             <a
-              href="{{ route('privacy') }}"
+              href="{{ route('terms') }}"
               class="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100"
             >
               Privacy Policy
@@ -436,124 +436,6 @@
     </div>
   </div>
 </section>
-
-<!---Modal -->
-<div
-  aria-hidden="false"
-  class="fixed z-[99999999990] hidden inset-0 top-0 items-start justify-center  bg-metal-900 bg-dark-200/25"
-  onclick="javascript.void(0)"
-  id="modal"
-  role="dialog"
->
-  <div class="relative w-full h-auto max-w-xl p-4 animate-keep-bounce">
-    <div class="relative bg-white dark:bg-dark-200 shadow-box rounded-medium p-2.5 ">
-      <div class="p-10 border border-gray-100 border-dashed rounded dark:border-borderColour-dark max-lg:p-5">
-        <div
-          class="flex items-center justify-between pb-5 border-b border-dashed bg border-b-borderColour dark:border-borderColour-dark"
-        >
-          <h3 class="text-paragraph dark:text-white">Search</h3>
-          <button
-            class="text-paragraph dark:text-white"
-            id="ok-btn"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              viewBox="0 0 256 256"
-            >
-              <rect
-                width="256"
-                height="256"
-                fill="none"
-              ></rect>
-              <circle
-                cx="128"
-                cy="128"
-                r="96"
-                fill="none"
-                stroke="currentColor"
-                stroke-miterlimit="10"
-                stroke-width="16"
-              ></circle>
-              <line
-                x1="160"
-                y1="96"
-                x2="96"
-                y2="160"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></line>
-              <line
-                x1="160"
-                y1="160"
-                x2="96"
-                y2="96"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></line>
-            </svg>
-          </button>
-        </div>
-        <form class="mt-5">
-          <div>
-            <div class="flex">
-              <div class="relative w-full">
-                <input
-                  class="block w-full focus:outline-none focus:ring-0 text-paragraph-light dark:text-paragraph-light  border-borderColour py-2.5 px-5  border border- rounded-medium bg-transparent  placeholder:text-paragraph dark:placeholder:text-white outline-none focus:border-primary dark:focus:border-primary  duration-300 transition-all"
-                  id="#id-10"
-                  placeholder="Search Component"
-                  type="text"
-                  value=""
-                />
-              </div>
-            </div>
-          </div>
-        </form>
-        <p class="hidden pt-5 mb-12 font-medium"><span>No recent searches</span></p>
-        <div class="pt-5">
-          <h3 class="mb-1">Search Result</h3>
-          <ul
-            class="[&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-gray-100  dark:[&>*:not(:last-child)]:border-borderColour-dark  [&>*:not(:last-child)]:border-b"
-          >
-            <li class="group ">
-              <a
-                class="flex items-center justify-between py-5 font-medium "
-                href="services-single.html"
-              >
-                Investment Banks
-                <i class="fa-solid fa-angle-right"></i>
-              </a>
-            </li>
-            <li class="group">
-              <a
-                href="services-single.html"
-                class="flex items-center justify-between py-5 font-medium "
-              >
-                Financial Analysis <i class="fa-solid fa-angle-right"></i>
-              </a>
-            </li>
-            <li class="group">
-              <a
-                href="services-single.html"
-                class="flex items-center justify-between py-5 font-medium "
-              >
-                Sales & Trading <i class="fa-solid fa-angle-right"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 <!--
