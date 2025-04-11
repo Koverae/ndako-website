@@ -31,6 +31,10 @@ class HomeController extends Controller
         return view('request-demo');
     }
 
+    public function start(){
+        return view('start');
+    }
+
     public function storeDemo(DemoRequest $request)
     {
         $validated = $request->validated();
