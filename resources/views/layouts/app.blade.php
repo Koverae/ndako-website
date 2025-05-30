@@ -25,6 +25,7 @@
   <!--Favicon-->
   <link rel="shortcut icon" href="{{ asset('assets/images/logo/favicon.ico')}}" type="image/x-icon" />
   
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 
   <script type="application/ld+json">{
@@ -325,10 +326,10 @@
         <p class="mb-3">Need Support?</p>
         <p class="mb-3">
           <a
-            href="mailto:contact@koverae.com"
+            href="mailto:ndako@koverae.com"
             class="relative inline-block overflow-hidden text-base text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100"
           >
-            contact@koverae.com
+            ndako@koverae.com
           </a>
         </p>
 
@@ -342,7 +343,23 @@
         <ul class="flex items-center gap-4 max-lg:justify-center social-link">
           <li>
             <a
-              href="#"
+              href="https://wa.link/5z12lm" target="_blank"
+              class="transiton-all"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" 
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none">
+                <path d="M 15 3 C 8.373 3 3 8.373 3 15 C 3 17.251208 3.6323415 19.350068 4.7109375 21.150391 L 3.1074219 27 L 9.0820312 25.431641 C 10.829354 26.425062 12.84649 27 15 27 C 21.627 27 27 21.627 27 15 C 27 8.373 21.627 3 15 3 z M 10.892578 9.4023438 C 11.087578 9.4023438 11.287937 9.4011562 11.460938 9.4101562 C 11.674938 9.4151563 11.907859 9.4308281 12.130859 9.9238281 C 12.395859 10.509828 12.972875 11.979906 13.046875 12.128906 C 13.120875 12.277906 13.173313 12.453437 13.070312 12.648438 C 12.972312 12.848437 12.921344 12.969484 12.777344 13.146484 C 12.628344 13.318484 12.465078 13.532109 12.330078 13.662109 C 12.181078 13.811109 12.027219 13.974484 12.199219 14.271484 C 12.371219 14.568484 12.968563 15.542125 13.851562 16.328125 C 14.986562 17.342125 15.944188 17.653734 16.242188 17.802734 C 16.540187 17.951734 16.712766 17.928516 16.884766 17.728516 C 17.061766 17.533516 17.628125 16.864406 17.828125 16.566406 C 18.023125 16.268406 18.222188 16.319969 18.492188 16.417969 C 18.766188 16.515969 20.227391 17.235766 20.525391 17.384766 C 20.823391 17.533766 21.01875 17.607516 21.09375 17.728516 C 21.17075 17.853516 21.170828 18.448578 20.923828 19.142578 C 20.676828 19.835578 19.463922 20.505734 18.919922 20.552734 C 18.370922 20.603734 17.858562 20.7995 15.351562 19.8125 C 12.327563 18.6215 10.420484 15.524219 10.271484 15.324219 C 10.122484 15.129219 9.0605469 13.713906 9.0605469 12.253906 C 9.0605469 10.788906 9.8286563 10.071437 10.097656 9.7734375 C 10.371656 9.4754375 10.692578 9.4023438 10.892578 9.4023438 z"
+                   class="fill-paragraph dark:fill-gray-100 hover:fill-primary dark:hover:fill-primary" >
+                </path>
+            </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#" target="_blank"
               class="transiton-all"
             >
               <svg
@@ -361,7 +378,7 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/Koverae">
+            <a href="https://github.com/Koverae" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
@@ -377,7 +394,7 @@
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/showcase/98761083">
+            <a href="https://www.linkedin.com/showcase/98761083" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
@@ -562,7 +579,7 @@
   #############
 -->
 <!-- Mark up for Script Section-->
-
+@yield('scripts')
 <script src="{{ asset('assets/vendor/fancybox/fancybox.js')}}"></script>
 <script src="{{ asset('assets/vendor/gsap/gsap.min')}}.js"></script>
 <script src="{{ asset('assets/vendor/gsap/motionpath.js')}}"></script>

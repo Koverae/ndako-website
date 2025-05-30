@@ -26,10 +26,15 @@ class HomeController extends Controller
     public function contactUs(){
         return view('contact');
     }
-
+    
     public function demo(){
         return view('request-demo');
     }
+    
+    public function download(){
+        return view('download');
+    }
+
 
     public function start(){
         return view('start');
@@ -81,14 +86,17 @@ class HomeController extends Controller
                 $q->where('slug', $request->tag);
             });
         }
-    
+
         $blogs = $query->published()->paginate(10)->withQueryString(); // Keeps query params in pagination
         $tags = PublisherTag::all();
         return view('blog.index', compact('blogs', 'tags'));
     }
 
     public function blogShow($slug){
-        $blog = PublisherPost::where('slug', $slug)->first();
+        $blog = PublisherPost::where('slug', $slug)->first() ?? null;
+        if($blog == null){
+            return redirect()->route('blog.index');
+        }
         return view('blog.show', compact('blog'));
     }
 }

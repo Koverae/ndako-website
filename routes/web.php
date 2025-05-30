@@ -14,6 +14,8 @@ Route::get('/start', [HomeController::class, 'start'])->name('start');
 Route::get('/contact-us', [HomeController::class, 'contactUs'])->name('contact');
 Route::get('/privacy-policy', [HomeController::class, 'privacy'])->name('privacy');
 Route::get('/terms', [HomeController::class, 'terms'])->name('terms');
+// Ndako On Premise
+Route::get('/download', [HomeController::class, 'download'])->name('download');
 
 Route::post('/contact-us', [HomeController::class, 'storeContact'])->name('contact.store');
 Route::post('/request-demo', [HomeController::class, 'storeDemo'])->name('demo.store');
