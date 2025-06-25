@@ -19,12 +19,12 @@
   <link href="{{ asset('assets/vendor/fancybox/fancybox.css')}}" rel="stylesheet" />
   <link href="{{ asset('assets/vendor/swiper/swiper.css')}}" rel="stylesheet" />
   <link href="{{ asset('assets/vendor/aos/aos.css')}}" rel="stylesheet" />
-  <link href="{{ asset('assets/css/theme.css') }}" rel="stylesheet" />
+  <link href="{{ asset('assets/css/theme.css?'.time())}}" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
   <!--Favicon-->
   <link rel="shortcut icon" href="{{ asset('assets/images/logo/favicon.ico')}}" type="image/x-icon" />
-  
+
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 
@@ -104,8 +104,8 @@
     class="fixed top-0 left-0 z-10 w-full py-2 text-center transition-all duration-500 origin-top scale-y-100 top-nav bg-primary"
     id="top-nav"
   >
-    <p class="font-medium max-lg:text-sm text-paragraph dark:text-paragraph">
-        Get 35% off your first subscription – <a href="https://dashboard.koverae.com/web/getting_started?utm=ndako-website">Sign up now!</a>
+    <p class="font-medium max-lg:text-sm text-white text-paragraph dark:text-paragraph">
+        Get 35% off your first subscription – <a class="text-white dark:text-black" href="https://dashboard.koverae.com/web/getting_started?utm=ndako-website">Sign up now!</a>
     </p>
   </div>
 
@@ -308,7 +308,7 @@
               href="https://ndako.tawk.help/" target="_blank"
               class="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100"
             >
-              Integration 
+              Integration
             </a>
           </li>
           <li>
@@ -346,7 +346,7 @@
               href="https://wa.link/5z12lm" target="_blank"
               class="transiton-all"
             >
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" 
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="28"
                 height="28"
                 viewBox="0 0 28 28"
@@ -409,7 +409,7 @@
               </svg>
             </a>
           </li>
-          
+
         </ul>
       </div>
     </div>

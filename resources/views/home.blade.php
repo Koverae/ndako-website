@@ -239,6 +239,11 @@
       <div class="relative col-span-12 text-center mb-15 lg:mb-25">
         <div class="relative">
           <img
+            src="{{asset('assets/images/restaurant-pos.png')}}"
+            alt="hero-shape"
+            class="absolute -translate-y-1/2 bottom-1/3 max-md:hidden animate-floating"
+          />
+          <img
             src="{{asset('assets/images/hotel-booking.png')}}"
             alt="hero-shape"
             class="absolute -translate-y-1/2 top-1/2 max-md:hidden animate-floating"
@@ -259,10 +264,10 @@
             Hotel Management made easy
           </h1>
           <p class="mb-12 max-md:mb-8 max-w-[590px] mx-auto">
-            A simple and efficient cloud-based hotel management software designed for small and medium-sized hotels. Easily manage bookings, guests, and invoicing, all in one place. 🚀
+            A simple and efficient cloud-based hotel management software built for small and medium-sized hotels. Easily manage bookings, guests, invoicing, and even restaurant operations with our integrated POS, all in one place 🚀
           </p>
           <div class="flex items-center justify-center gap-4 mx-auto mb-10 max-md:flex-col">
-            <a href="https://dashboard.koverae.com/web/getting_started" target="__blank" target="_blank"  class="btn cursor-fancy">
+            <a href="https://app.ndako.tech/web/getting_started" target="__blank" target="_blank"  class="btn cursor-fancy">
                 Start your 7-day free trial
             </a>
             <a href="#pricing" class="bg-white dark:!bg-white dark:!text-paragraph btn-outline cursor-fancy">
@@ -328,10 +333,11 @@
               class="w-full rounded"
             />
             <a
-              href="#"
+              href="https://www.youtube.com/embed/cM3ikfj5VAc?si=AA9phtyihH-O4tx0"
               data-fancybox
               class="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 cursor-fancy"
             >
+
               <img
                 src="{{asset('assets/images/ai/play.svg')}}"
                 alt="play"
@@ -358,7 +364,7 @@
         <a href="{{ route('demo') }}" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
             Book demo
         </a>
-        <a href="https://dashboard.koverae.com/web/getting_started" target="__blank" target="_blank" class="btn">
+        <a href="https://app.ndako.tech/web/getting_started" target="__blank" target="_blank" class="btn">
             Start your Journey
         </a>
     </div>
@@ -384,7 +390,7 @@
             <a href="{{ route('demo') }}" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
                 Book demo
             </a>
-            <a href="https://dashboard.koverae.com/web/getting_started" target="__blank" class="btn">
+            <a href="https://app.ndako.tech/web/getting_started" target="__blank" class="btn">
                 🚀 Get started
             </a>
           </div>
@@ -684,47 +690,18 @@
         <a href="{{ route('demo') }}" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
             Book demo
         </a>
-        <a href="https://dashboard.koverae.com/web/getting_started" target="__blank" class="btn">
+        <a href="https://app.ndako.tech/web/getting_started" target="__blank" class="btn">
             🚀 Get started
         </a>
       </div>
-      <div class="relative max-md:mt-150">
+    <div class="relative">
         <img
-          src="{{asset('assets/images/home/3.png')}}"
-          alt="vision image"
-          class="w-[260px] xl:w-[310px] dark:hidden"
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-duration="1000"
-          data-aos-once="true"/>
-        <img
-          src="{{asset('assets/images/home/3.png')}}"
-          alt="vision image"
-          class="w-[260px] xl:w-[310px] hidden dark:inline-block"
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-duration="1000"
-          data-aos-once="true"/>
-        <div
-          class="absolute -top-25 left-40 md:-top-12 xl:-top-[150px]  xl:left-[290px] w-[200px]  md:w-[200px] xl:w-[310px]"
-          data-aos="fade-left"
-          data-aos-offset="200"
-          data-aos-duration="1000"
-          data-aos-once="true"
-        >
-          <img
-            src="{{asset('assets/images/home/4.png')}}"
-            alt="vision image shape"
-            class="w-full full dark:hidden"
-          />
-          <img
-            src="{{asset('assets/images/home/4.png')}}"
-            alt="vision image shape"
-            class="hidden w-full full dark:inline-block"
-          />
-        </div>
-
-      </div>
+        src="{{asset('assets/images/home/ndako-booking-calendar-2.png')}}"
+        alt="Booking Calendar shape"
+        class="rounded-lg"
+        style="height: 500px; width: auto; max-width: 1200px;"
+        />
+    </div>
     </div>
   </div>
 
@@ -782,21 +759,12 @@
   <div class="container relative z-10">
     <div class="grid items-end grid-cols-2 gap-10 max-md:grid-cols-1 1xl:gap-x-24">
         <div class="relative flex items-center justify-end max-md:justify-center">
-          <img
-            src="{{asset('assets/images/home/11.png')}}"
-            alt="banking image"
-            height=""
-            class="dark:hidden max-w-[250px] lg:max-w-[320px] xl:max-w-[420px]"
-          />
-          <img
-            src="{{asset('assets/images/home/11.png')}}"
-            alt="banking image"
-            class="hidden dark:inline-block  max-w-[250px] lg:max-w-[320px] xl:max-w-[420px]"
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-duration="1000"
-            data-aos-once="true"
-          />
+            <img
+                src="{{asset('assets/images/home/ndako-invoicing-dashboard.png')}}"
+                alt="Booking Calendar shape"
+                class="rounded-lg"
+                style="height: 500px; width: auto; max-width: 1200px;"
+            />
 
           <div
             class="absolute left-0 right-auto bottom-8 top-auto max-w-[180px] md:max-w-[250px] xl:max-w-[344px]"
@@ -836,6 +804,7 @@
 
           <div class="absolute left-0 right-auto bottom-8 top-auto max-w-[180px] md:max-w-[250px] xl:max-w-[344px]"></div>
         </div>
+
         <div>
           <p class="section-tagline">Simplified billing, seamless payments</p>
 
@@ -888,25 +857,36 @@
 
 <section class=" bg-white dark:bg-dark-300 overflow-hidden relative pt-[160px] pb-150 lg:pb-15 max-lg:pt-20 max-lg:pb-150">
   <div class="container ">
-    <div class="grid items-center grid-cols-2 gap-10 max-md:grid-cols-1 1xl:gap-x-24">
-      <div class="max-md:order-2">
-        <div class="relative pt-150 lg:py-150 lg:px-150">
-          <div class="w-[350px] lg:w-[600px] aspect-video relative mx-auto">
+    <div class="grid items-end grid-cols-2 gap-10 max-md:grid-cols-1 1xl:gap-x-24">
+        <div class="relative flex items-center justify-end max-md:justify-center">
             <img
-              src="{{asset('assets/images/home/website.png')}}"
-              alt="vision image"
-              class="dark:hidden"
+                src="{{asset('assets/images/home/website-ndako.png')}}"
+                alt="Booking Calendar shape"
+                class="rounded-lg"
+                style="height: 500px; width: auto; max-width: 1200px;"
+            />
+
+          <div
+            class="absolute bottom-2 left-20 md:bottom-0 xl:bottom-3 md:left-[100px] xl:left-150 w- [280px] md:w-[200px] xl:w-[350px]"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-once="true">
+            <img
+              src="{{asset('assets/images/home/room.png')}}"
+              alt="Room"
+              class="w-full h-full rounded dark:hidden"
             />
             <img
-              src="{{asset('assets/images/home/website-dark.png')}}"
-              alt="vision image"
-              class="hidden dark:inline-block"
+              src="{{asset('assets/images/home/room.png')}}"
+              alt="Room"
+              class="hidden w-full h-full dark:inline-block"
             />
-            
           </div>
+
+          <div class="absolute left-0 right-auto bottom-8 top-auto max-w-[180px] md:max-w-[250px] xl:max-w-[344px]"></div>
         </div>
-      </div>
-      
+
       <div class="max-md:order-1 lg:-mt-15">
         <p class="section-tagline">More direct bookings, more revenue</p>
 
@@ -940,7 +920,7 @@
         <a href="{{ route('demo') }}" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
             Book demo
         </a>
-        <a href="https://dashboard.koverae.com/web/getting_started" target="__blank" class="btn">
+        <a href="https://app.ndako.tech/web/getting_started" target="__blank" class="btn">
             Get started
         </a>
 
@@ -953,14 +933,14 @@
 <section class="bg-white dark:bg-dark-300 pb-150 max-md:pb-20">
   <div class="container relative z-10">
     <div class="text-center max-w-[620px] mx-auto">
-        <p class="section-tagline">Integrate & Sync with Ease</p>
+        <p class="section-tagline">🍽️ Serve & Sync with Ease</p>
 
-        <h2 class="mb-8">Connect seamlessly with your favorite tools </h2>
+        <h2 class="mb-8">Seamlessly connect your front desk and restaurant </h2>
         <p class="mb-10">
-            Ndako connects with the tools you already use, making your workflow smoother. Sync reservations, payments, and guest data effortlessly across multiple platforms.
+            Ndako's built-in Restaurant POS keeps your operations in sync, from guest orders to room billing. Manage meals, track restaurant sales, and link everything back to your guest profiles effortlessly.
         </p>
 
-        <a href="https://dashboard.koverae.com/web/getting_started" target="__blank" class="btn-outline">
+        <a href="https://app.ndako.tech/web/getting_started" target="__blank" class="btn-outline">
             Get started
         </a>
     </div>
@@ -1783,7 +1763,7 @@
                 </li>
 
               </ul>
-              <a href="https://dashboard.koverae.com/web/getting_started" target="__blank"  class="w-full py-3 text-center uppercase btn-outline dark:bg-transparent">
+              <a href="https://app.ndako.tech/web/getting_started" target="__blank"  class="w-full py-3 text-center uppercase btn-outline dark:bg-transparent">
                 Start Now
               </a>
             </div>
@@ -1835,7 +1815,7 @@
               </ul>
 
               <a
-                href="https://dashboard.koverae.com/web/getting_started" target="__blank"
+                href="https://app.ndako.tech/web/getting_started" target="__blank"
                 class="w-full py-3 text-center uppercase btn"
               >
                 Start for free
@@ -1887,7 +1867,7 @@
               </ul>
 
               <a
-                href="https://dashboard.koverae.com/web/getting_started" target="__blank"
+                href="https://app.ndako.tech/web/getting_started" target="__blank"
                 class="w-full py-3 text-center uppercase btn-outline dark:bg-transparent"
               >
                 Start for free
@@ -1897,7 +1877,7 @@
 
         </div>
       </div>
-      
+
 
       <div class="pt-3 mt-3 text-center text-black col-12">
         <p>
@@ -2064,7 +2044,7 @@
         <a href="#" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
             💬 Drop your testimony
         </a>
-        <a href="https://dashboard.koverae.com/web/getting_started" class="btn">
+        <a href="https://app.ndako.tech/web/getting_started" class="btn">
             🚀 Get started now
         </a>
       </div>
@@ -2168,7 +2148,7 @@
       <a href="{{ route('demo') }}" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
           Book demo
       </a>
-      <a href="https://dashboard.koverae.com/web/getting_started" class="btn">
+      <a href="https://app.ndako.tech/web/getting_started" class="btn">
         🚀 Get Started Today
       </a>
       <ul
@@ -2251,7 +2231,7 @@
       <div class="grid grid-cols-2 gap-10 max-lg:grid-cols-1 1xl:gap-x-24 ">
         <div>
           <p class="section-tagline">Faq’s</p>
-  
+
           <h2 class="mb-8">
             Got Questions? <br/>
             We’ve Got Answers

@@ -25,8 +25,8 @@
   >
     <div class="mb-12 text-center max-w-[475px] mx-auto">
       <h2 class="mb-3">Download Ndako</h2>
-      <p>It's very easy to install and configure your <strong>Ndako</strong>, the free hotel management software. 
-        In this page you can find detailed information about installation. 
+      <p>It's very easy to install and configure your <strong>Ndako</strong>, the free hotel management software.
+        In this page you can find detailed information about installation.
         You can use <strong>Ndako</strong> on your own host/server without any limitation.</p>
     </div>
     <div class="relative z-10 max-w-[850px] mx-auto">
@@ -63,7 +63,7 @@
                   class="block w-full text-sm rounded-[48px] border border-borderColour dark:border-borderColour-dark py-2.5 px-5 text-paragraph-light placeholder:text-paragraph-light dark:placeholder:text-paragraph-light outline-none bg-white dark:bg-dark-200 focus:border-primary dark:focus:border-primary  duration-300 transition-all"
                 />
                 @error('name') <p class="text-sm text-red-500">{{ $message }}</p> @enderror
-    
+
               </div>
               <div class="max-md:col-span-full md:col-span-6">
                 <label for="company" class="block mb-2 text-sm font-medium font-jakarta_sans text-paragraph dark:text-white">
@@ -79,7 +79,7 @@
                   class="block w-full text-sm rounded-[48px] border border-borderColour dark:border-borderColour-dark py-2.5 px-5 text-paragraph-light placeholder:text-paragraph-light dark:placeholder:text-paragraph-light outline-none bg-white dark:bg-dark-200 focus:border-primary dark:focus:border-primary  duration-300 transition-all"
                 />
                 @error('company') <p class="text-sm text-red-500">{{ $message }}</p> @enderror
-    
+
               </div>
               <div class="max-md:col-span-full md:col-span-6">
                 <label for="phone" class="block mb-2 text-sm font-medium font-jakarta_sans text-paragraph dark:text-white">
@@ -95,7 +95,7 @@
                   class="block w-full text-sm rounded-[48px] border border-borderColour dark:border-borderColour-dark py-2.5 px-5 text-paragraph-light placeholder:text-paragraph-light dark:placeholder:text-paragraph-light outline-none bg-white dark:bg-dark-200 focus:border-primary dark:focus:border-primary  duration-300 transition-all"
                 />
                 @error('phone') <p class="text-sm text-red-500">{{ $message }}</p> @enderror
-    
+
               </div>
               <div class="max-md:col-span-full md:col-span-6">
                 <label for="email" class="block mb-2 text-sm font-medium font-jakarta_sans text-paragraph dark:text-white">
@@ -110,15 +110,15 @@
                   placeholder="e.g. brian.mwangi@company.com"
                   class="block w-full text-sm rounded-[48px] border border-borderColour dark:border-borderColour-dark py-2.5 px-5 text-paragraph-light   placeholder:text-paragraph-light outline-none bg-white dark:bg-dark-200 focus:border-primary dark:focus:border-primary  duration-300 transition-all"/>
                   @error('email') <p class="text-sm text-red-500">{{ $message }}</p> @enderror
-      
+
               </div>
               <div class="flex gap-2 mx-auto text-center col-span-full">
                 <a href="#" class="btn-outline">Not ready for a demo? Try Ndako for Free</a>
                 <button type="submit" class="btn">Submit</button>
               </div>
-                
+
             </div>
-            
+
           </form>
         <div id="response" class="mt-4 text-center"></div>
         <div id="downloadSection" class="hidden mt-4">
@@ -132,7 +132,7 @@
 
 
 <section class="relative pb-25 max-md:overflow-hidden">
-  
+
     <div class="container relative max-md:text-center">
       <div class="absolute left-1/2 -bottom-[442px] -translate-x-1/2  flex max-md:flex-col -z-10 max-md:hidden">
         <div
@@ -232,7 +232,7 @@
             try {
                 const response = await axios.post('http://app.koverae.test/api/register', data);
                 responseDiv.innerHTML = `<p class="text-green-600">${response.data.message}</p>`;
-                
+
                 // Show download button with APP key
                 if (response.data.app_key) {
                     const downloadUrl = `http://app.koverae.test/api/download?app_key=${encodeURIComponent(response.data.app_key)}`;

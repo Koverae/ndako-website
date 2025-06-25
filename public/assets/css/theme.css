@@ -2093,7 +2093,7 @@ a:is(.dark *){
 }
 .bg-primary{
   --tw-bg-opacity: 1;
-  background-color: rgb(177 227 70 / var(--tw-bg-opacity, 1));
+  background-color: rgb(1, 126, 132);
 }
 .bg-primary-100{
   --tw-bg-opacity: 1;
@@ -2151,7 +2151,7 @@ a:is(.dark *){
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 .from-primary{
-  --tw-gradient-from: #B1E346 var(--tw-gradient-from-position);
+  --tw-gradient-from: #017E84 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(177 227 70 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
@@ -2222,10 +2222,10 @@ a:is(.dark *){
   fill: #18181B;
 }
 .fill-primary{
-  fill: #B1E346;
+  fill: #017E84;
 }
 .fill-primary-200{
-  fill: #C4F241;
+  fill: #338b90;
 }
 .fill-transparent{
   fill: transparent;
@@ -3254,7 +3254,7 @@ span{
 }
 
 .social-link li a:hover svg path{
-  fill: #B1E346;
+  fill: #017E84;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
@@ -4081,7 +4081,7 @@ span{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 .hover\:fill-primary:hover{
-  fill: #B1E346;
+  fill: #017E84;
 }
 .hover\:text-paragraph:hover{
   --tw-text-opacity: 1;
@@ -4144,7 +4144,7 @@ span{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .group:hover .group-hover\:fill-primary{
-  fill: #B1E346;
+  fill: #017E84;
 }
 .group:hover .group-hover\:opacity-100{
   opacity: 1;
@@ -4328,10 +4328,10 @@ span{
   fill: #DCE0D3;
 }
 .dark\:fill-primary:is(.dark *){
-  fill: #B1E346;
+  fill: #017E84;
 }
 .dark\:fill-primary-200:is(.dark *){
-  fill: #C4F241;
+  fill: #338b90;
 }
 .dark\:fill-white:is(.dark *){
   fill: #fff;
@@ -4340,7 +4340,7 @@ span{
   stroke: #464745;
 }
 .dark\:stroke-primary:is(.dark *){
-  stroke: #B1E346;
+  stroke: #017E84;
 }
 .dark\:\!text-paragraph:is(.dark *){
   --tw-text-opacity: 1 !important;
@@ -4510,7 +4510,7 @@ span{
   background-color: rgb(177 227 70 / var(--tw-bg-opacity, 1));
 }
 .dark\:hover\:fill-primary:hover:is(.dark *){
-  fill: #B1E346;
+  fill: #017E84;
 }
 .dark\:hover\:text-paragraph:hover:is(.dark *){
   --tw-text-opacity: 1;
