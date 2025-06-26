@@ -361,7 +361,7 @@
     </div>
 
     <div class="flex items-center justify-center gap-2 mt-15">
-        <a href="{{ route('demo') }}" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
+        <a href="https://tidycal.com/ndako/demo" target="_blank" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
             Book demo
         </a>
         <a href="https://app.ndako.tech/web/getting_started" target="__blank" target="_blank" class="btn">
@@ -387,7 +387,7 @@
             <p class="mb-8">
                 From bookings to invoicing, and daily operations, manage your hotel with ease, all in one simple and reliable platform.
             </p>
-            <a href="{{ route('demo') }}" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
+            <a href="https://tidycal.com/ndako/demo" target="_blank" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
                 Book demo
             </a>
             <a href="https://app.ndako.tech/web/getting_started" target="__blank" class="btn">
@@ -687,7 +687,7 @@
             <span class="font-medium dark:text-white font-jakarta_sans">Direct Website Booking</span>
           </li>
         </ul>
-        <a href="{{ route('demo') }}" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
+        <a href="https://tidycal.com/ndako/demo" target="_blank" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
             Book demo
         </a>
         <a href="https://app.ndako.tech/web/getting_started" target="__blank" class="btn">
@@ -917,7 +917,7 @@
           </li>
         </ul>
 
-        <a href="{{ route('demo') }}" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
+        <a href="https://tidycal.com/ndako/demo" target="_blank" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
             Book demo
         </a>
         <a href="https://app.ndako.tech/web/getting_started" target="__blank" class="btn">
@@ -1371,6 +1371,42 @@
   </div>
 </section>
 
+<!-- Newsletter -->
+<section class="relative pb-25 max-md:overflow-hidden">
+    <div class="container relative max-md:text-center">
+      <div class="absolute left-1/2 -bottom-[442px] -translate-x-1/2  flex max-md:flex-col -z-10 max-md:hidden">
+        <div
+          class="max-md:hidden max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary-200/20 blur-[145px]"
+        ></div>
+        <div
+          class="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary-200/25 -ml-[170px] max-md:ml-0 blur-[145px]"
+        ></div>
+        <div
+          class="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary-200/20 -ml-[170px] max-md:ml-0 blur-[145px]"
+        ></div>
+      </div>
+      <div
+        class="absolute left-1/2 -bottom-[350px] p-[350px] -translate-x-1/2 bg-contain w-full h-full  bg-[url('../images/hero-gradient.png')] bg-no-repeat bg-center opacity-70 md:hidden -z-10"
+      ></div>
+      <div>
+        
+        <div class="grid items-start grid-cols-12 grid-y-10">
+          <div class="max-md:col-span-full md:col-span-6 lg:col-span-7">
+            <h2 class="mb-5 max-lg:text-[32px] text-[48px] font-semibold ">📬 Stay Ahead in Hospitality</h2>
+            <p>
+                Join the Ndako Hospitality Tips newsletter today and get weekly insights, expert tips, and the latest trends to help you run your hotel, BnB, or guesthouse more efficiently.
+                No spam. Just smart ideas to elevate your hospitality game, straight to your inbox.
+            </p>
+          </div>
+          <div class="max-md:col-span-full md:col-span-6 lg:col-span-5 max-md:mt-5 ">
+            <button class="w-full btn max-lg:col-span-full lg:col-span-4 ml-onclick-form" onclick="ml('show', 'X1eMi5', true)">Subscribe</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- Newsletter -->
 
 <section class="bg-gray dark:bg-dark overflow-hidden relative pt-[135px] pb-[145px] max-md:py-20">
   <div class="absolute top-0 max-w-[1612px] left-1/2 -translate-x-1/2  max-md:hidden">
@@ -1461,7 +1497,7 @@
         Streamline your business operations and bring your properties, guests, and team together in one powerful, easy-to-use platform.
       </p>
 
-      <a href="{{ route('demo') }}" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
+      <a href="https://tidycal.com/ndako/demo" target="_blank" class=" bg-white dark:!bg-white dark:!text-paragraph  btn-outline">
           Book demo
       </a>
       <a href="https://app.ndako.tech/web/getting_started" class="btn">
@@ -1802,4 +1838,6 @@
       </div>
     </div>
 </section>
+
+
 @endsection

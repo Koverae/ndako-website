@@ -66,6 +66,20 @@
     src="https://www.facebook.com/tr?id=291287213552434&ev=PageView&noscript=1" />
 </noscript>
 <!-- End Meta Pixel Code -->
+
+<!-- Mark up for Script Section-->
+@yield('scripts')
+
+<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '1623584');
+</script>
+<!-- End MailerLite Universal -->
+
 </head>
 
 <body class="relative overflow-x-hidden text-base antialiased bg-white dark:bg-dark-300 font-Inter">
@@ -578,8 +592,6 @@
   Footer Area
   #############
 -->
-<!-- Mark up for Script Section-->
-@yield('scripts')
 <script src="{{ asset('assets/vendor/fancybox/fancybox.js')}}"></script>
 <script src="{{ asset('assets/vendor/gsap/gsap.min')}}.js"></script>
 <script src="{{ asset('assets/vendor/gsap/motionpath.js')}}"></script>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\DemoRequest;
 use App\Mail\DemoRequestMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use Koverae\KoveraePublisher\Models\PublisherPost;
 use Koverae\KoveraePublisher\Models\PublisherTag;
@@ -42,14 +43,22 @@ class HomeController extends Controller
 
     public function storeDemo(DemoRequest $request)
     {
-        $validated = $request->validated();
+        $validated = $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'email:rfc,dns', 'max:255'],
+            'company' => ['required', 'string', 'max:255'],
+            'phone' => ['nullable', 'string', 'max:20', 'regex:/^\+?[0-9\s\-()]*$/'],
+            'message' => ['nullable', 'string', 'max:500'],
+        ]);
 
-        // Dispatch email to the queue
-        Mail::to('techie@ndako.koverae.com')
-            ->cc('laudbouetoumoussa@gmail.com')
-            ->send(new DemoRequestMail($validated));
+        // Call external API to save the demo request
+        // $response = Http::post('https://api.ndako.tech/api/admin/v1/demo-request', $validated);
 
-            return redirect()->route('demo')->with('success', 'Your demo request has been sent successfully!');
+        // if (!$response->successful()) {
+        //     return redirect()->route('demo')->with('error', 'Failed to submit your demo request. Please try again later.');
+        // }
+
+        return redirect()->route('demo')->with('success', 'Your demo request has been sent successfully!');
     }
 
     public function storeContact(DemoRequest $request)

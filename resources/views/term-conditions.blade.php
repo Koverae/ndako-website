@@ -93,7 +93,7 @@
         <h3>Contact Us</h3>
         <p>
           If you have any questions or concerns about this privacy policy or our use of your personal information, please
-          contact us at contact@koverae.com.
+          contact us at ndako@koverae.com.
         </p>
       </div>
     </div>

@@ -10,7 +10,6 @@
     <p><strong>Phone:</strong> {{ $data['phone'] }}</p>
     <p><strong>Hotel Name:</strong> {{ $data['company'] ?? 'Not Provided' }}</p>
     <p><strong>Number of Rooms:</strong> {{ $data['rooms'] ?? 'Not Provided' }}</p>
-    <p><strong>Preferred Demo Date & Time:</strong> {{ \Carbon\Carbon::parse($data['date'])->format('l d F Y') ?? 'Not Provided' }}</p>
     <p><strong>Message:</strong> {{ $data['message'] ?? 'No additional message' }}</p>
 </body>
 </html>

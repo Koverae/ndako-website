@@ -104,7 +104,7 @@
               />
             </svg>
             <h3 class="mb-2.5">Email Us</h3>
-            <a href="mailto:contact@koverae.com"> contact@koverae.com </a>
+            <a href="mailto:ndako@koverae.com"> ndako@koverae.com </a>
           </div>
         </div>
 
@@ -262,67 +262,18 @@
         class="absolute left-1/2 -bottom-[350px] p-[350px] -translate-x-1/2 bg-contain w-full h-full  bg-[url('../images/hero-gradient.png')] bg-no-repeat bg-center opacity-70 md:hidden -z-10"
       ></div>
       <div>
-        <div>
-          <p class="section-tagline">Start Today</p>
-        </div>
+        
         <div class="grid items-start grid-cols-12 grid-y-10">
           <div class="max-md:col-span-full md:col-span-6 lg:col-span-7">
-            <h2 class="mb-5 max-lg:text-[32px] text-[48px] font-semibold ">Start your free trial now!</h2>
-            <p>Start your free trial today and experience seamless hotel management with Ndako! Effortlessly manage bookings, streamline operations, and grow your business, all in one place. No credit card required! ✅</p>
+            <h2 class="mb-5 max-lg:text-[32px] text-[48px] font-semibold ">📬 Stay Ahead in Hospitality</h2>
+            <p>
+                Join the Ndako Hospitality Tips newsletter today and get weekly insights, expert tips, and the latest trends to help you run your hotel, BnB, or guesthouse more efficiently.
+                No spam. Just smart ideas to elevate your hospitality game, straight to your inbox.
+            </p>
           </div>
           <div class="max-md:col-span-full md:col-span-6 lg:col-span-5 max-md:mt-5 ">
-            <form>
-              <div class="grid items-center grid-cols-12 max-lg:gap-y-5 lg:gap-x-6 ">
-                <input
-                  type="text"
-                  placeholder="Enter your email"
-                  class="bg-transparent placeholder:text-light dark:placeholder:text-[#A1A49D] text-[#A1A49D] text-light focus:outline-none  leading-[1.5] border rounded-[60px] bg-white dark:bg-dark-200 dark:border-[#31332F] border-borderColour max-lg:col-span-full lg:col-span-8 h-full ps-5 max-lg:py-3.5 focus:border-primary dark:focus:border-primary  duration-300 transition-all outline-none"
-                />
-                <button class="btn max-lg:col-span-full lg:col-span-4">Get Started</button>
-              </div>
-            </form>
-            <ul class=" flex max-md:flex-col max-lg:gap-y-2.5 items-center max-lg:justify-between lg:gap-5 mt-6 ">
-              <li class="flex items-center">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="mr-3"
-                >
-                  <path
-                    d="M14.125 7.75L8.62497 13L5.875 10.375M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
-                    stroke=""
-                    class="stroke-paragraph dark:stroke-primary"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <p>No Credit Card Required</p>
-              </li>
-              <li class="flex items-center">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="mr-3"
-                >
-                  <path
-                    d="M14.125 7.75L8.62497 13L5.875 10.375M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
-                    stroke=""
-                    class="stroke-paragraph dark:stroke-primary"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <p>Free For 7 Day Trial.</p>
-              </li>
-            </ul>
+            <button class="w-full btn max-lg:col-span-full lg:col-span-4 ml-onclick-form" onclick="ml('show', 'X1eMi5', true)">Subscribe</button>
+            
           </div>
         </div>
       </div>

@@ -42,6 +42,7 @@ class DemoRequestMail extends Mailable
     {
         return new Content(
             view: 'emails.demo-request',
+            with: ['data' => $this->data],
         );
     }
     
