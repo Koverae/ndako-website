@@ -6,19 +6,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const pricingData = {
     ke: {
       currency: 'KSh',
-      spark: { month: 475, monthOld: 730, year: 5700, yearOld: 8760 },
+      spark: { month: 475, monthOld: 730, year: 4700, yearOld: 7300 },
     },
     tz: {
       currency: 'TSh',
-      spark: { month: 9800, monthOld: 15000, year: 117420, yearOld: 180500 },
+      spark: { month: 9800, monthOld: 15000, year: 98000, yearOld: 150000 },
     },
     ug: {
       currency: 'USh',
-      spark: { month: 13150, monthOld: 20150, year: 157400, yearOld: 242000 },
+      spark: { month: 13150, monthOld: 20150, year: 131500, yearOld: 201500 },
     },
     rw: {
       currency: 'RWF',
-      spark: { month: 5300, monthOld: 8100, year: 63500, yearOld: 97250 },
+      spark: { month: 5300, monthOld: 8100, year: 53000, yearOld: 81000 },
     },
   };
 

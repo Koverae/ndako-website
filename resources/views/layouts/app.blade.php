@@ -105,7 +105,7 @@
     id="top-nav"
   >
     <p class="font-medium text-white max-lg:text-sm text-paragraph dark:text-paragraph">
-        Get 35% off your first subscription – <a class="text-white dark:text-black" href="https://dashboard.koverae.com/web/getting_started?utm=ndako-website">Sign up now!</a>
+        Get 35% off your first subscription – <a class="text-white dark:text-black" href="https://app.ndako.tech/web/getting_started?utm=ndako-website">Sign up now!</a>
     </p>
   </div>
 
@@ -167,13 +167,13 @@
         </button>
       </li>
       <li class="max-lg:hidden">
-        <a href="https://dashboard.koverae.com/web/login" class="btn-sm bg-white dark:!bg-white dark:!text-paragraph btn-outline cursor-fancy">
+        <a href="https://app.ndako.tech/web/login" class="btn-sm bg-white dark:!bg-white dark:!text-paragraph btn-outline cursor-fancy">
           Sign In
         </a>
       </li>
       <li class="max-lg:hidden">
-        <a href="http://dashboard.koverae.com/web/getting_started" target="_blank" class="btn btn-navbar btn-sm">
-          Start free
+        <a href="http://app.ndako.tech/web/getting_started" target="_blank" class="btn btn-navbar btn-sm">
+          Try it free
         </a>
       </li>
       <li class="max-lg:inline-block lg:hidden ">
@@ -266,7 +266,7 @@
             style="height: 55px;"
         />
         <p class="max-w-[350px] max-lg:mx-auto">
-            Ndako is an all-in-one platform for property owners, managers, and tenants, streamlining listings, financials, and guest interactions.
+            Ndako is an all-in-one platform for hospitality owners and managers, streamlining room bookings, guest interactions, finances, and restaurant operations, all from one dashboard.
         </p>
       </div>
       <div class="col-span-12 lg:col-span-2 max-lg:text-center">
@@ -313,7 +313,7 @@
           </li>
           <li>
             <a
-              href="https://dashboard.koverae.com/web/login" target="_blank"
+              href="https://app.ndako.tech/web/login" target="_blank"
               class="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100"
             >
               Log In

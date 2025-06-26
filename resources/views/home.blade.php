@@ -1028,7 +1028,7 @@
         <div
           class="absolute left-1/2 p-[350px] top-25 -translate-x-1/2 -translate-y-1/2 bg-[url('../images/price-gradient.png')] bg-no-repeat bg-center bg-contain opacity-70 md:hidden"
         ></div>
-        <div class="relative flex items-center gap-8 pb-12 max-lg:flex-col max-md:z-10">
+        <div class="relative flex items-center gap-8 pb-6 max-lg:flex-col max-md:z-10">
           <div class="bg-white dark:bg-dark-200 shadow-box rounded-medium p-2.5 ">
             <div class="p-8 border border-gray-100 border-dashed rounded dark:border-borderColour-dark max-md:p-5">
               <h3 class="mb-2">Ndako Starter</h3>
@@ -1052,19 +1052,19 @@
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                 </svg>
 
-                  <span>Direct Booking Management</span>
+                  <span>Handle bookings without third parties.</span>
                 </li>
                 <li class="mb-6 flex items-center gap-3.5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="" class="bi bi-check-circle-fill fill-primary" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                 </svg>
-                  <span>Guest Management</span>
+                  <span>Track guest info with ease.</span>
                 </li>
                 <li class="mb-6 flex items-center gap-3.5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="" class="bi bi-check-circle-fill fill-primary" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                 </svg>
-                  <span>Basic Invoicing</span>
+                  <span>Send clean, simple invoices fast.</span>
                 </li>
                 <li class="mb-6 flex items-center gap-3.5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="" class="bi bi-check-circle-fill fill-primary" viewBox="0 0 16 16">
@@ -1109,19 +1109,31 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="" class="bi bi-check-circle-fill fill-primary" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                 </svg>
-                    <span>Seamless Website Booking</span>
+                    <span>Let guests book directly from your site.</span>
                 </li>
                 <li class="mb-6 flex items-center gap-3.5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="" class="bi bi-check-circle-fill fill-primary" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                 </svg>
-                    <span>Advanced Reporting & Insights</span>
+                    <span>Make smarter decisions with deeper data.</span>
                 </li>
                 <li class="mb-6 flex items-center gap-3.5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="" class="bi bi-check-circle-fill fill-primary" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                 </svg>
-                    <span>Payment Processing</span>
+                    <span>Manage multiple properties, all in one account.</span>
+                </li>
+                <li class="mb-6 flex items-center gap-3.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="" class="bi bi-check-circle-fill fill-primary" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                    <span>Accept payments seamlessly and securely.</span>
+                </li>
+                <li class="mb-6 flex items-center gap-3.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="" class="bi bi-check-circle-fill fill-primary" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                    <span>Run your restaurant and sync orders with rooms.</span>
                 </li>
               </ul>
 
@@ -1129,7 +1141,7 @@
                 href="https://app.ndako.tech/web/getting_started" target="__blank"
                 class="w-full py-3 text-center uppercase btn"
               >
-                Start for free
+                Free Trial
               </a>
             </div>
           </div>
