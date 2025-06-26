@@ -104,7 +104,7 @@
     class="fixed top-0 left-0 z-10 w-full py-2 text-center transition-all duration-500 origin-top scale-y-100 top-nav bg-primary"
     id="top-nav"
   >
-    <p class="font-medium max-lg:text-sm text-white text-paragraph dark:text-paragraph">
+    <p class="font-medium text-white max-lg:text-sm text-paragraph dark:text-paragraph">
         Get 35% off your first subscription – <a class="text-white dark:text-black" href="https://dashboard.koverae.com/web/getting_started?utm=ndako-website">Sign up now!</a>
     </p>
   </div>
@@ -587,6 +587,7 @@
 <script src="{{ asset('assets/vendor/aos/aos.js')}}"></script>
 <script src="{{ asset('assets/vendor/stackItem/stackItem.js')}}"></script>
 <script src="{{ asset('assets/js/script.js') }}"></script>
+<script src="{{ asset('assets/js/ndako.js?'.time()) }}"></script>
 </body>
 
 </html>
