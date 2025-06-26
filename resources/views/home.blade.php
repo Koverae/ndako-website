@@ -1088,9 +1088,11 @@
               </p>
               <div class="mb-16 price-month">
                 <h2 class="spark-price"></h2>
+                  <p>Per <b>room</b> month</p>
               </div>
               <div class="mb-16 price-year">
                 <h2 class="spark-price"></h2>
+                  <p>Per <b>room</b> year</p>
               </div>
 
               <ul
@@ -1161,15 +1163,15 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     tz: {
       currency: 'TSh',
-      spark: { month: 8200, monthOld: 12600, year: 98400, yearOld: 151200 },
+      spark: { month: 9800, monthOld: 15000, year: 117420, yearOld: 180500 },
     },
     ug: {
       currency: 'USh',
-      spark: { month: 13000, monthOld: 20000, year: 156000, yearOld: 240000 },
+      spark: { month: 13150, monthOld: 20150, year: 157400, yearOld: 242000 },
     },
     rw: {
       currency: 'RWF',
-      spark: { month: 4200, monthOld: 6500, year: 50400, yearOld: 78000 },
+      spark: { month: 5300, monthOld: 8100, year: 63500, yearOld: 97250 },
     },
   };
 
