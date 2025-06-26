@@ -1007,7 +1007,7 @@
             ></div>
             <span class="ms-2.5 text-base font-semibold text-paragraph dark:text-white py-5">Yearly</span>
             <div class="flex">
-              <span class=" -mr-4 bg-primary text-white text-paragraph py-1.5 px-3 rounded-full font-medium"> Save 35% </span>
+              <span class=" -mr-4 bg-primary text-white text-paragraph py-1.5 px-3 rounded-full font-medium"> Get 2 Months Free </span>
             </div>
           </label>
         </div>
