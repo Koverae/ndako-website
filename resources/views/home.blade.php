@@ -944,7 +944,7 @@
             Get started
         </a>
     </div>
-   
+
       <div
         class="relative col-span-12 mx-auto xl:col-start-2 xl:col-span-11"
         data-aos="fade-up"
@@ -976,13 +976,31 @@
           <h2>Pick the best plan for your business</h2>
         </div>
 
-        <div class="mt-4 pricing">
-          <label class="relative inline-flex items-center gap-2 cursor-pointer z-[110]">
+        <div class="flex flex-col items-center gap-4 mt-4 pricing">
+          <div class="flex items-center gap-4">
+            <label for="countrySelect" class="font-semibold text-paragraph dark:text-white">Country:</label>
+            <select id="countrySelect" class="px-3 py-2 border border-gray-300 rounded focus:outline-none">
+                <option value="ke" selected>
+                    🇰🇪 Kenya
+                </option>
+                <option value="tz">
+                    🇹🇿 Tanzania
+                </option>
+                <option value="ug">
+                    🇺🇬 Uganda
+                </option>
+                <option value="rw">
+                    🇷🇼 Rwanda
+                </option>
+            </select>
+          </div>
+          <label class="relative inline-flex items-center gap-2 cursor-pointer z-[110] mt-2">
             <span class="mr-2.5 text-base font-semibold text-paragraph dark:text-white py-5">Monthly</span>
             <input
               type="checkbox"
               id="priceCheck"
               class="sr-only peer"
+              checked
             />
             <div
               class=" relative w-15 h-[34px] bg-paragraph rounded-[20px] peer-checked:after:translate-x-full  after:content-[''] after:absolute after:top-1/2 after:-translate-y-1/2 after:start-[5px] peer-checked:after:start-[7px] after:bg-primary  after:rounded-full after:h-6 after:w-6 after:transition-all before:absolute before:content-[''] before:border before:border-dashed before:w-[calc(100%-10px)] before:h-[calc(100%-10px)] before:rounded-[20px] before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2 before:border-white/40 "
@@ -991,7 +1009,7 @@
             <div class="flex">
               <span class=" -mr-4 bg-primary text-white text-paragraph py-1.5 px-3 rounded-full font-medium"> Save 35% </span>
             </div>
-          </label>!:
+          </label>
         </div>
       </div>
 
@@ -1018,11 +1036,11 @@
                 For <b>1-15 rooms</b> <br /> Ideal for small hotels, boutique stays, and guesthouses
               </p>
               <div class="mb-16 price-month">
-                <h2>Free</h2>
+                <h2 class="starter-price" data-price="free">Free</h2>
                 <p>&nbsp;</p>
               </div>
               <div class="mb-16 price-year">
-                <h2>Free</h2>
+                <h2 class="starter-price" data-price="free">Free</h2>
                 <p>&nbsp;</p>
               </div>
 
@@ -1066,15 +1084,13 @@
             <div class="p-8 border border-gray-100 border-dashed rounded dark:border-borderColour-dark max-md:p-5">
               <h3 class="mb-2">Ndako Spark</h3>
               <p class="mb-6">
-                For <b>11-105 rooms</b><br /> Mid-sized hotels seamlessly streamlining daily business operations.
+                For <b>+16 rooms</b><br /> Mid-sized hotels seamlessly streamlining daily business operations.
               </p>
               <div class="mb-16 price-month">
-                  <h2>KSh <span>312<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 480</sup></span></h2>
-                  <p>Per <b>room</b> month</p>
+                <h2 class="spark-price"></h2>
               </div>
               <div class="mb-16 price-year">
-                  <h2>KSh <span>260<sup style="text-decoration: line-through; font-size: 16px; font-weight: 400;">KSh 400</sup></span></h2>
-                  <p>Per <b>room</b> month</p>
+                <h2 class="spark-price"></h2>
               </div>
 
               <ul
@@ -1132,6 +1148,63 @@
       </div>
     </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const countrySelect = document.getElementById('countrySelect');
+  const priceToggle = document.getElementById('priceCheck');
+
+  const pricingData = {
+    ke: {
+      currency: 'KSh',
+      spark: { month: 475, monthOld: 730, year: 5700, yearOld: 8760 },
+    },
+    tz: {
+      currency: 'TSh',
+      spark: { month: 8200, monthOld: 12600, year: 98400, yearOld: 151200 },
+    },
+    ug: {
+      currency: 'USh',
+      spark: { month: 13000, monthOld: 20000, year: 156000, yearOld: 240000 },
+    },
+    rw: {
+      currency: 'RWF',
+      spark: { month: 4200, monthOld: 6500, year: 50400, yearOld: 78000 },
+    },
+  };
+
+  function updatePrices() {
+    const selectedCountry = countrySelect.value;
+    const isYearly = priceToggle.checked;
+    const { currency, spark } = pricingData[selectedCountry];
+
+    const priceContainerMonth = document.querySelector('.price-month');
+    const priceContainerYear = document.querySelector('.price-year');
+    const sparkPrice = isYearly ? spark.year : spark.month;
+    const sparkOldPrice = isYearly ? spark.yearOld : spark.monthOld;
+
+    // Update visibility
+    priceContainerMonth.style.display = isYearly ? 'none' : 'block';
+    priceContainerYear.style.display = isYearly ? 'block' : 'none';
+
+    // Update price content
+    const sparkPriceEls = document.querySelectorAll('.spark-price');
+    sparkPriceEls.forEach(el => {
+      el.innerHTML = `
+        ${currency} <span>${sparkPrice}</span>
+        <sup style="text-decoration: line-through; font-size: 14px; color: #999; margin-left: 8px;">
+          ${currency} ${sparkOldPrice}
+        </sup>
+      `;
+    });
+  }
+
+  countrySelect.addEventListener('change', updatePrices);
+  priceToggle.addEventListener('change', updatePrices);
+
+  updatePrices(); // Initial load
+});
+</script>
 
 
 <section class="relative bg-white dark:bg-dark-300 max-md:py-20 pt-150 pb-150">
