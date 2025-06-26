@@ -1143,7 +1143,7 @@
             <div class="p-8 bg-white dark:bg-dark-200 rounded-medium max-md:p-5">
             <h3 class="mb-2 text-2xl font-semibold text-start">Estimate Your Price</h3>
             <p class="mb-6 text-start text-paragraph dark:text-white">Enter your number of rooms and see your price instantly.</p>
-            <form class="flex flex-col md:flex-row items-start gap-6 w-full h-full" onsubmit="return false;" style="min-height: 220px;">
+            <form class="flex flex-col items-start w-full h-full gap-6 md:flex-row" onsubmit="return false;" style="min-height: 220px;">
                 <div class="flex flex-col items-start w-full gap-2 md:w-1/4">
                     <label for="calcRooms" class="font-medium text-paragraph dark:text-white">Number of rooms</label>
                     <input
@@ -1157,9 +1157,9 @@
                 </div>
                 <div class="flex flex-col items-start w-full gap-2 md:w-1/4">
                     <label class="font-medium text-paragraph dark:text-white">Billing period</label>
-                    <div class="flex gap-4 w-full">
-                        <button type="button" id="calcMonthly" class="px-4 py-2 font-semibold text-white border rounded calc-toggle border-primary bg-primary focus:outline-none w-full">Monthly</button>
-                        <button type="button" id="calcYearly" class="px-4 py-2 font-semibold bg-white border border-gray-300 rounded calc-toggle dark:bg-dark-200 text-paragraph dark:text-white focus:outline-none w-full">Yearly</button>
+                    <div class="flex w-full gap-4">
+                        <button type="button" id="calcMonthly" class="w-full px-4 py-2 font-semibold text-white border rounded calc-toggle border-primary bg-primary focus:outline-none">Monthly</button>
+                        <button type="button" id="calcYearly" class="w-full px-4 py-2 font-semibold bg-white border border-gray-300 rounded calc-toggle dark:bg-dark-200 text-paragraph dark:text-white focus:outline-none">Yearly</button>
                     </div>
                 </div>
                 <div class="flex flex-col items-start w-full gap-2 md:w-1/4">
@@ -1171,8 +1171,8 @@
                         <option value="rw">🇷🇼 Rwanda</option>
                     </select>
                 </div>
-                <div class="flex flex-col justify-end items-center w-full md:w-1/4 h-full mt-6 md:mt-0">
-                    <div class="w-full text-center mt-auto">
+                <div class="flex flex-col items-center justify-end w-full h-full mt-6 md:w-1/4 md:mt-0">
+                    <div class="w-full mt-auto text-center">
                         <div id="calcResult" class="mb-1 text-3xl font-bold text-primary"></div>
                         <div id="calcOldResult" class="text-base text-gray-400 line-through"></div>
                         <div id="calcNote" class="mt-2 text-sm text-paragraph dark:text-white"></div>
