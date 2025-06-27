@@ -517,7 +517,7 @@
           <h2 class="text-[48px]">
             <span
               class="counter"
-              data-value="35"
+              data-value="20"
             >
             </span
             ><span class="percent">+</span>
@@ -528,7 +528,7 @@
           <h2 class="text-[48px]">
             <span
               class="counter"
-              data-value="53"
+              data-value="11"
             >
             </span
             ><span class="percent">K</span>
