@@ -1178,9 +1178,9 @@
                     <label class="font-medium text-paragraph dark:text-white">Country</label>
                     <select id="calcCountry" class="w-full px-3 py-2 text-center border border-gray-300 rounded focus:outline-none">
                         <option value="ke" selected>🇰🇪 Kenya</option>
-                        <option value="tz">🇹🇿 Tanzania</option>
+                        {{-- <option value="tz">🇹🇿 Tanzania</option>
                         <option value="ug">🇺🇬 Uganda</option>
-                        <option value="rw">🇷🇼 Rwanda</option>
+                        <option value="rw">🇷🇼 Rwanda</option> --}}
                     </select>
                 </div>
                 <div class="flex flex-col items-center justify-end w-full h-full mt-6 md:w-1/4 md:mt-0">
@@ -1389,7 +1389,7 @@
         class="absolute left-1/2 -bottom-[350px] p-[350px] -translate-x-1/2 bg-contain w-full h-full  bg-[url('../images/hero-gradient.png')] bg-no-repeat bg-center opacity-70 md:hidden -z-10"
       ></div>
       <div>
-        
+
         <div class="grid items-start grid-cols-12 grid-y-10">
           <div class="max-md:col-span-full md:col-span-6 lg:col-span-7">
             <h2 class="mb-5 max-lg:text-[32px] text-[48px] font-semibold ">📬 Stay Ahead in Hospitality</h2>
@@ -1400,7 +1400,7 @@
           </div>
           <div class="max-md:col-span-full md:col-span-6 lg:col-span-5 max-md:mt-5 ">
             <button class="w-full btn max-lg:col-span-full lg:col-span-4 ml-onclick-form" onclick="ml('show', 'X1eMi5', true)">Subscribe</button>
-            
+
           </div>
         </div>
       </div>
