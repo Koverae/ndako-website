@@ -983,7 +983,7 @@
                 <option value="ke" selected>
                     🇰🇪 Kenya
                 </option>
-                <option value="tz">
+                {{-- <option value="tz">
                     🇹🇿 Tanzania
                 </option>
                 <option value="ug">
@@ -991,7 +991,7 @@
                 </option>
                 <option value="rw">
                     🇷🇼 Rwanda
-                </option>
+                </option> --}}
             </select>
           </div>
           <label class="relative inline-flex items-center gap-2 cursor-pointer z-[110] mt-2">
